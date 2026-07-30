@@ -13,7 +13,7 @@
   --top-menu-color-angle-left: #353b48;
   --font-size: 16px;
   --padding-harmony-menu: 0.5rem;
-  --hover-harmony-menu-a: linear-gradient(to left,color-mix(in srgb, var(--theme-primary) 70%, transparent),var(--theme-primary-500));
+  --hover-harmony-menu-a: var(--theme-primary);
   --hover-duration: 200ms;
   --hover-color: #ffffff;
   --min-width-harmony-menu-li-ul: 15rem;
@@ -86,14 +86,17 @@
 }
 
 
-
-
-.harmony-menu > li.harmony-menu-li {
+/* .harmony-menu > li.harmony-menu-li {
   padding: 0.25rem 0;
-}
-/* .harmony-menu > li.harmony-menu-li > a {
-  color: var(--color-harmony-menu-a);
 } */
+
+/* .harmony-menu > li.harmony-menu-li > a {
+  color:var(--color-slate-700);
+} */
+/* .harmony-menu > li.harmony-menu-li:hover > a{
+  color:var(--theme-secondary);
+} */
+
 .harmony-menu-li {
   position: relative;
 }
@@ -114,7 +117,7 @@
   -webkit-transition-duration: var(--hover-duration);
   -o-transition-duration: var(--hover-duration);
   transition-duration: var(--hover-duration);
-  /* color: var(--color-harmony-menu-li-ul-a); */
+  color: var(--color-harmony-menu-li-ul-a);
 }
 .harmony-menu-li-ul .harmony-menu-a:hover {
   background: var(--hover-harmony-menu-a);
@@ -638,10 +641,13 @@ li.harmony-menu-li:hover > .harmony-menu-li-ul {
 /* /* design */
 
 .harmony-menu > li.harmony-menu-li:hover {
-  
   color: var(--theme-primary-500);
 }
 
+/* 
+.harmony-menu.defaul_top_menu > li.harmony-menu-li > a{
+  color: #ffffff;
+} */
 
 /* design */
 

@@ -1,0 +1,25 @@
+{
+  "name": "mrcarpet",
+  "version": "1.0.0",
+  "description": "آقای فرش",
+  "homepage": "https://github.com/masoud-ahmadi/mrcarpet#readme",
+  "bugs": {
+    "url": "https://github.com/masoud-ahmadi/mrcarpet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masoud-ahmadi/mrcarpet.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "mrcarpet": "npx @tailwindcss/cli -i ./htemplate/Toranj/Assets/css/App/input.css -o ./htemplate/Toranj/Assets/Css/App/output.css --watch",
+    "mini": "npx @tailwindcss/cli -i ./htemplate/Toranj/Assets/css/App/input.css -o ./htemplate/Toranj/Assets/Css/App/output.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

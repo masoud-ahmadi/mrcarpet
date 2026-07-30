@@ -57,30 +57,30 @@
 }
 
 @font-face {
-    font-display: swap;
-    font-family: Borna;
-    font-weight: 200;
-    src: url('../../Fonts/Borna/Borna-Light.woff') format('woff'),
+  font-display: swap;
+  font-family: Borna;
+  font-weight: 200;
+  src: url('../../Fonts/Borna/Borna-Light.woff') format('woff');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: Borna;
-    font-weight: 400;
-    src: url('../../Fonts/Borna/Borna-Regular.woff') 
+  font-display: swap;
+  font-family: Borna;
+  font-weight: 400;
+  src: url('../../Fonts/Borna/Borna-Regular.woff');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: Borna;
-    font-weight: 700;
-    src: url('../../Fonts/Borna/Borna-Bold.woff') format('woff'),
+  font-display: swap;
+  font-family: Borna;
+  font-weight: 700;
+  src: url('../../Fonts/Borna/Borna-Bold.woff') format('woff');
 }
 
 body {
-  font-family: Borna,Peyda, sans-serif;
+  font-family: 'Peyda', sans-serif;
   direction: rtl;
-
+  color: #303030;
 }
 html {
   scroll-behavior: smooth;
@@ -119,19 +119,21 @@ html {
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: #66666633;
-  }
-  .button {
-    @apply flex items-center justify-center gap-3 px-3 py-2 rounded-lg cursor-pointer active:scale-95;
+    border-color: #6666661a;
   }
 }
 
 @theme {
   --color-theme-primary: var(--theme-primary);
+  --color-theme-primary-100: var(--theme-primary-100);
+  --color-theme-secondary: var(--theme-secondary);
+  --font-borna: 'Borna', sans-serif;
 }
 
 :root {
   --theme-primary: #293897;
+  --theme-primary-100: #e6f2ff;
+  --theme-secondary: #fab130;
 }
 
 @utility container {
@@ -148,4 +150,23 @@ html {
   .container {
     max-width: 80rem;
   }
+}
+
+.header_design::after {
+  @apply absolute inset-y-0 bg-theme-primary -z-1 shadow-[-10px_0px_0px_#29389740] inset-[92%] inset-s-[-3000%];
+
+  content: '';
+  transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -webkit-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+}
+
+.clip-path-left {
+  clip-path: polygon(0% 50%, 100% 100%, 0% 100%);
+}
+
+.clip-path-right {
+  clip-path: polygon(100% 50%, 100% 100%, 0% 100%);
 }
