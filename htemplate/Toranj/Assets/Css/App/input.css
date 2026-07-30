@@ -1,0 +1,151 @@
+@import url('../../Component/AllTemplate/allModal.css');
+@import url('../../Component/Harmony-Menu/Harmony-menu.css');
+@import url('../App/harmony_icon.css');
+
+@import 'tailwindcss';
+
+/* ----------------  Font ---------------- */
+
+@font-face {
+  font-family: Peyda;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../../Fonts/peyad/PeydaWebFaNum-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: Peyda;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../Fonts/peyad/PeydaWebFaNum-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: Peyda;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../../Fonts/peyad/PeydaWebFaNum-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: Peyda;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../../Fonts/peyad/PeydaWebFaNum-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: Peyda;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../../Fonts/peyad/PeydaWebFaNum-Black.woff2') format('woff2');
+}
+@font-face {
+  font-family: Peyda;
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('../../Fonts/peyad/PeydaWebFaNum-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: Peyda;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('../../Fonts/peyad/PeydaWebFaNum-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Borna;
+    font-weight: 200;
+    src: url('../../Fonts/Borna/Borna-Light.woff') format('woff'),
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Borna;
+    font-weight: 400;
+    src: url('../../Fonts/Borna/Borna-Regular.woff') 
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Borna;
+    font-weight: 700;
+    src: url('../../Fonts/Borna/Borna-Bold.woff') format('woff'),
+}
+
+body {
+  font-family: Borna,Peyda, sans-serif;
+  direction: rtl;
+
+}
+html {
+  scroll-behavior: smooth;
+  unicode-bidi: plaintext;
+}
+
+/*font-style*/
+
+.overflow-auto,
+.overflow-scroll,
+.overflow-x-auto,
+.overflow-x-scroll,
+.overflow-y-auto,
+.overflow-y-scroll {
+  scrollbar-color: #0000001a transparent;
+}
+.overflow-auto > *,
+.overflow-scroll > *,
+.overflow-x-auto > *,
+.overflow-y-auto > * {
+  scrollbar-color: auto;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #66666633;
+  }
+  .button {
+    @apply flex items-center justify-center gap-3 px-3 py-2 rounded-lg cursor-pointer active:scale-95;
+  }
+}
+
+@theme {
+  --color-theme-primary: var(--theme-primary);
+}
+
+:root {
+  --theme-primary: #293897;
+}
+
+@utility container {
+  margin-inline: auto;
+}
+
+@media (max-width: 65rem) {
+  .container {
+    padding-inline: 1rem;
+  }
+}
+
+@media (min-width: 96rem) {
+  .container {
+    max-width: 80rem;
+  }
+}

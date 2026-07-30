@@ -1,0 +1,64 @@
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.btn-group input {
+  display: none;
+}
+
+.btn-group label {
+  padding: .25rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.btn-group label:hover {
+  border-color: var(--theme-primary);
+  color: var(--theme-primary);
+}
+
+.btn-group label:has(input:checked) {
+  background: var(--theme-primary);
+  color: #121212;
+  border-color: var(--theme-primary);
+}
+
+@-webkit-keyframes shake {
+  0%, 25%, 83%, 100% {
+      -webkit-transform: rotatez(0deg);
+      transform: rotatez(0deg);
+  }
+  32.5%, 62.5% {
+      -webkit-transform: rotatez(-5deg);
+      transform: rotatez(-5deg);
+  }
+  47.5%, 75.5% {
+      -webkit-transform: rotatez(5deg);
+      transform: rotatez(5deg);
+  }
+}
+@keyframes shake {
+  0%, 25%, 83%, 100% {
+      -webkit-transform: rotatez(0deg);
+      transform: rotatez(0deg);
+  }
+  32.5%, 62.5% {
+      -webkit-transform: rotatez(-5deg);
+      transform: rotatez(-5deg);
+  }
+  47.5%, 75.5% {
+      -webkit-transform: rotatez(5deg);
+      transform: rotatez(5deg);
+  }
+}
+
+  .animate_shake{
+    transform-origin: 50% 50%;
+    animation: shake 1.5s infinite;
+}
