@@ -170,3 +170,15 @@ html {
 .clip-path-right {
   clip-path: polygon(100% 50%, 100% 100%, 0% 100%);
 }
+
+
+  .shape_disgn {
+    -webkit-mask-image: url(../../Images/design/Ellipse.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position:top center;
+    -webkit-mask-size: contain;
+    mask-image: url(../../Images/design/Ellipse.png);
+    mask-repeat: no-repeat;
+    mask-position:top center;
+    mask-size: contain;
+}
