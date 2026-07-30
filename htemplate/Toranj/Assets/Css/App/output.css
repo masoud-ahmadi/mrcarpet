@@ -795,6 +795,10 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .size-7 {
+    width: calc(var(--spacing) * 7);
+    height: calc(var(--spacing) * 7);
+  }
   .size-8 {
     width: calc(var(--spacing) * 8);
     height: calc(var(--spacing) * 8);
@@ -914,8 +918,14 @@
   .min-w-1\/2 {
     min-width: calc(1 / 2 * 100%);
   }
+  .min-w-12 {
+    min-width: calc(var(--spacing) * 12);
+  }
   .min-w-14 {
     min-width: calc(var(--spacing) * 14);
+  }
+  .min-w-16 {
+    min-width: calc(var(--spacing) * 16);
   }
   .min-w-20 {
     min-width: calc(var(--spacing) * 20);
