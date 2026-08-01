@@ -126,13 +126,16 @@ html {
 @theme {
   --color-theme-primary: var(--theme-primary);
   --color-theme-primary-100: var(--theme-primary-100);
+  --color-theme-primary-900: var(--theme-primary-900);
   --color-theme-secondary: var(--theme-secondary);
   --font-borna: 'Borna', sans-serif;
+  --shadow-theme-gray: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 :root {
   --theme-primary: #293897;
   --theme-primary-100: #e6f2ff;
+  --theme-primary-900: #112b50;
   --theme-secondary: #fab130;
 }
 
