@@ -128,6 +128,7 @@ html {
   --color-theme-primary-100: var(--theme-primary-100);
   --color-theme-primary-900: var(--theme-primary-900);
   --color-theme-secondary: var(--theme-secondary);
+  --color-theme-secondary-400: var(--theme-secondary-400);
   --font-borna: 'Borna', sans-serif;
   --shadow-theme-gray: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
@@ -137,6 +138,8 @@ html {
   --theme-primary-100: #e6f2ff;
   --theme-primary-900: #112b50;
   --theme-secondary: #fab130;
+  --theme-secondary-400: #c7924c;
+  --theme-linear-md: 0deg, #0ee15c 0%, #0eae49 100%;
 }
 
 @utility container {
