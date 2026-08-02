@@ -177,14 +177,25 @@ html {
   clip-path: polygon(100% 50%, 100% 100%, 0% 100%);
 }
 
+.shape_disgn {
+  -webkit-mask-image: url(../../Images/design/Ellipse.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top center;
+  -webkit-mask-size: contain;
+  mask-image: url(../../Images/design/Ellipse.png);
+  mask-repeat: no-repeat;
+  mask-position: top center;
+  mask-size: contain;
+}
 
-  .shape_disgn {
-    -webkit-mask-image: url(../../Images/design/Ellipse.png);
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position:top center;
-    -webkit-mask-size: contain;
-    mask-image: url(../../Images/design/Ellipse.png);
-    mask-repeat: no-repeat;
-    mask-position:top center;
-    mask-size: contain;
+.section_design:after {
+  @apply -z-1 inset-y-0 absolute bg-theme-primary-900 inset-s-0 -inset-e-full rounded-3xl;
+  content: '';
+
+  -moz-transform: translate(-20%, 0px) skew(20deg, 0deg);
+  -webkit-transform: translate(-20%, 0px) skew(20deg, 0deg);
+  -o-transform: translate(-20%, 0px) skew(20deg, 0deg);
+  -ms-transform: translate(-20%, 0px) skew(20deg, 0deg);
+  transform: translate(-20%, 0px) skew(20deg, 0deg);
+  
 }
