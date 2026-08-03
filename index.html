@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="htemplate/Toranj/Assets/Component/swiper/swiper-bundle.min.css"
     />
-
+    <link rel="stylesheet" href="htemplate/Toranj/Assets/Css/story/story.css" />
     <link rel="stylesheet" href="htemplate/Toranj/Assets/Css/App/output.css" />
   </head>
   <body>
@@ -53,9 +53,19 @@
       </div>
       <div class="z-1 bg-theme-primary-100">
         <div
-          class="container flex items-center min-h-13 gap-2 header_design relative z-1"
+          class="container flex items-center min-h-13 justify-between gap-2 header_design relative z-1"
         >
-          <div class="flex-1 flex items-center relative">
+          <button
+            type="button"
+            aria-label="باز کردن منو ناوبری"
+            class="show-btn shrink-0 lg:hidden"
+            data-modal="menu"
+          >
+            <span class="w-6 h-1 bg-white block rounded-md"></span>
+            <span class="w-8 h-1 bg-white block rounded-md my-1"></span>
+            <span class="w-6 h-1 bg-white block rounded-md"></span>
+          </button>
+          <div class="flex-1 items-center relative hidden lg:flex">
             <div class="inline-flex gap-1 items-center">
               <div
                 class="static shrink-0 dropdown"
@@ -1224,8 +1234,54 @@
     </header>
     <!-- end-header -->
 
+    <!-- start-story -->
+    <div class="container pt-5" (hasstory)>
+      <div class="story_slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-auto!">
+            <a
+              href="/aparat"
+              class="size-14 grid place-content-center rounded-full overflow-hidden bg-gradient-story p-0.5 transition-transform duration-300 text-xs text-center text-white relative"
+            >
+              مشاهده<br />همه
+
+              <span
+                class="absolute inset-0 rounded-full border-4 border-transparent border-t-white border-b-white animate-spin-slow"
+              ></span>
+            </a>
+          </div>
+          <!-- (story group="64421" count="30") -->
+          <div class="swiper-slide w-auto!">
+            <button
+              type="button"
+              data-link="(link)"
+              data-video="(attach1)"
+              class="story-item group cursor-pointer grid place-content-center"
+              data-video="(attach1)"
+            >
+              <picture
+                class="size-14 rounded-full grow bg-gradient-story mx-auto p-0.5 transition-transform duration-300 overflow-hidden block"
+              >
+                <img
+                  src="(simage)"
+                  class="size-full object-cover object-center border-2 border-white rounded-full group-hover:scale-105"
+                  alt="story"
+                  loading="lazy"
+                />
+                <div
+                  class="swiper-lazy-preloader swiper-lazy-preloader-white"
+                ></div>
+              </picture>
+            </button>
+          </div>
+          <!-- (/story) -->
+        </div>
+      </div>
+    </div>
+    <!-- end-story -->
+
     <!-- start-section-1 -->
-    <section class="py-10 overflow-hidden min-h-48 xl:min-h-170">
+    <section class="pt-5 pb-5 md:pb-10 overflow-hidden min-h-48 xl:min-h-170">
       <div class="container sm:px-5">
         <div class="banner_slider swiper">
           <div class="swiper-wrapper">
@@ -1301,35 +1357,27 @@
     <!-- end-section-1 -->
 
     <!-- start-section-2 -->
-    <section class="relative bg-theme-primary-100 py-10">
-      <div class="container space-y-10">
-        <div class="space-y-8">
+    <section class="relative bg-theme-primary-100 py-5 md:py-10">
+      <div class="container space-y-5 md:space-y-10">
+        <div class="space-y-5 lg:space-y-8">
           <div class="flex items-center justify-center gap-5 text-center">
-            <div class="space-y-2">
+            <div class="space-y-5">
               <span
                 class="inline-flex items-center gap-2 bg-theme-primary/20 text-primary text-xs font-bold px-4 py-1 rounded-full"
               >
                 فروشگاه تخصصی فرش
               </span>
-
               <h2
-                class="text-3xl md:text-5xl font-black leading-tight text-gray-900"
+                class="text-2xl md:text-5xl font-black leading-tight text-gray-900"
               >
                 به <span class="text-theme-primary">آقای فرش</span> خوش آمدید
               </h2>
-
-              <p
-                class="text-gray-500 text-sm md:text-base max-w-xl mx-auto leading-7"
-              >
-                هزاران فرش ماشینی، دستباف و مدرن را با بهترین قیمت، ضمانت کیفیت
-                و ارسال سریع جستجو و مقایسه کنید.
-              </p>
             </div>
           </div>
 
           <div class="max-w-2xl mx-auto">
             <div
-              class="flex items-center gap-2 rounded-full bg-white border border-gray-200 shadow-lg p-2 duration-300 focus-within:border-theme-primary focus-within:ring-4 focus-within:ring-theme-primary/20"
+              class="flex items-center gap-2 rounded-full bg-white border border-gray-200 shadow-lg p-1 md:p-2 duration-300 focus-within:border-theme-primary focus-within:ring-4 focus-within:ring-theme-primary/20"
             >
               <i
                 class="harmony-icon-search harmony-icon text-xl text-gray-400 px-2"
@@ -1343,7 +1391,7 @@
 
               <button
                 type="button"
-                class="rounded-full bg-theme-primary hover:bg-theme-primary/90 text-white px-6 h-11 font-bold transition active:scale-95 cursor-pointer"
+                class="rounded-full bg-theme-primary hover:bg-theme-primary/90 text-white px-3 md:px-6 h-9 md:h-11 font-bold transition active:scale-95 cursor-pointer text-xs"
               >
                 جستجو
               </button>
@@ -1351,38 +1399,37 @@
           </div>
 
           <div class="flex flex-wrap justify-center items-center gap-2">
-            <span class="text-sm text-gray-500">جستجوهای محبوب:</span>
-
+            
             <a
               href="#"
-              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-sm border-gray-300"
+              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-xs sm:text-sm border-gray-300"
             >
               فرش ۷۰۰ شانه
             </a>
 
             <a
               href="#"
-              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-sm border-gray-300"
+              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-xs sm:text-sm border-gray-300"
             >
               فرش ۱۲۰۰ شانه
             </a>
 
             <a
               href="#"
-              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-sm border-gray-300"
+              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-xs sm:text-sm border-gray-300"
             >
               فرش 500 شانه
             </a>
 
             <a
               href="#"
-              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-sm border-gray-300"
+              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-xs sm:text-sm border-gray-300"
             >
               فرش 1500 شانه
             </a>
             <a
               href="#"
-              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-sm border-gray-300"
+              class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-xs sm:text-sm border-gray-300"
             >
               فرش 320 شانه
             </a>
@@ -3728,7 +3775,6 @@
 
         <div class="h_faq max-w-xl mx-auto" (hasfaq)>
           <ul class="accordion-menu space-y-3">
-            
             <li
               class="faq_content [&.open_.dropdownlink]:bg-theme-primary [&.open_.dropdownlink]:text-white [&.open_.submenuItems]:bg-white [&.open_.questiontitle]:text-xl space-y-2"
             >
@@ -3834,11 +3880,10 @@
                 <p class="text-sm leading-relaxed text-justify">(answer)</p>
               </div>
             </li>
-            
           </ul>
         </div>
         <div
-          class="overflow-hidden max-w-4xl mx-auto bg-white rounded-2xl border"
+          class="overflow-hidden  bg-white rounded-2xl border"
           (hasseobox)
         >
           <div class="space-y-5 relative">
@@ -3972,7 +4017,7 @@
                 </div>
                 <div class="flex items-center justify-center">
                   <div
-                    class="text-center  rounded-lg overflow-hidden font-borna"
+                    class="text-center rounded-lg overflow-hidden font-borna"
                   >
                     <div class="introduction-span cursor-pointer p-2 min-w-20">
                       <div class="text-sm">توضیحات بیشتر</div>
@@ -4213,6 +4258,171 @@
     </section>
     <!-- end-footer -->
 
+    <!-- SideRight -->
+    <div
+      class="hmodal shadow-sm fixed bottom-0 top-0 h-full overflow-hidden bg-white shrink-0"
+      id="rightMenu"
+      data-modal="menu"
+    >
+      <div
+        class="h-full relative flex flex-col flex-1 overflow-y-auto size-full"
+      >
+        <div
+          class="flex justify-between items-center p-2 sticky top-0 z-30 gap-3 bg-theme-primary border-b"
+        >
+          <a href="signin" class="flex items-center gap-2 flex-1">
+            <div
+              class="rounded-full size-10 overflow-hidden grid place-content-center shrink-0"
+            >
+              <img
+                src="htemplate/Ravi/Assets/Images/User/user.png"
+                alt="user"
+                class="size-full object-cover"
+                title="user"
+              />
+            </div>
+            <div class="flex-1">
+              <p class="line-clamp-1 text-sm">(hpname)</p>
+            </div>
+          </a>
+          <button
+            type="button"
+            class="shrink-0 btnClose cursor-pointer text-black size-7 p-2 grid place-content-center rounded-full"
+          >
+            <i class="harmony-icon-cancel-2 text-2xl harmony-icon"></i>
+          </button>
+        </div>
+        <div class="menu_overflow p-2">
+          <nav class="harmony-nav-menu">
+            (mainmenu masterclass="harmony-mobile-menu-accordion")(/mainmenu)
+          </nav>
+        </div>
+        <div class="grow"></div>
+        <div
+          class="bg-gray-100 py-2 sticky bottom-0 inset-e-0 z-10 text-center border-t"
+        >
+          <a
+            href="tel:(phone)"
+            class="text-center text-lg text-theme-primary-700 block font-semibold"
+            >(phone)</a
+          >
+          <p class="text-xs text-gray-500">با ما درتماس باشید</p>
+        </div>
+      </div>
+    </div>
+    <!-- SideRight -->
+
+    <!-- story -->
+    <div class="story-modal fixed inset-0 z-9999 h-dvh hidden" dir="ltr">
+      <div class="size-full flex items-center justify-center">
+        <div
+          class="progress-container w-full flex gap-1 p-2 shrink-0 z-10 fixed top-0.5 inset-x-0"
+        ></div>
+
+        <button
+          type="button"
+          class="close-story-btn size-10 sm:flex items-center justify-center rounded-full closeModal hover:text-red-500 hidden text-white text-xl transition cursor-pointer absolute top-5 inset-e-5 z-10"
+        >
+          <i
+            class="harmony-icon-cancel-circled-outline harmony-icon text-2xl"
+          ></i>
+        </button>
+        <!-- این همان بک‌دراپ شماست -->
+        <div class="close-modal-overlay absolute inset-0 z-1"></div>
+
+        <div
+          class="story-content flex flex-col items-center gap-5 justify-center z-10 relative"
+        >
+          <div class="relative space-y-3 max-w-[calc(100vw-2.5rem)]">
+            <div
+              class="story-video-wrapper relative grow-0 max-h-[calc(100dvh-7rem)] rounded-xl shadow-xl overflow-hidden"
+            >
+              <video
+                class="story-video size-full"
+                autoplay
+                playsinline
+                preload="auto"
+                poster=""
+                disablepictureinpicture="true"
+                webkit-playsinline
+                x5-playsinline
+              ></video>
+
+              <div
+                id="muteIcon"
+                class="absolute inset-0 text-white text-5xl pointer-events-none hidden borer-2 border-red-500"
+              >
+                <div class="size-full flex items-center justify-center">
+                  <i class="harmony-icon-volume-off harmony-icon"></i>
+                </div>
+              </div>
+
+              <div
+                class="absolute bottom-0 video-details-content min-h-20 flex items-end p-3 inset-x-0"
+              >
+                <div class="grow space-y-2">
+                  <div
+                    id="seekContainer"
+                    class="video_control_range select-none relative h-1.5 rounded cursor-pointer"
+                  >
+                    <div
+                      id="seekBar"
+                      class="absolute top-0 left-0 h-full bg-white w-0 rounded"
+                    ></div>
+                    <div
+                      id="seekTooltip"
+                      class="absolute -top-8 text-xs -translate-x-1/2 bg-black text-white px-2 py-1 rounded hidden"
+                    >
+                      0:00
+                    </div>
+                  </div>
+
+                  <a
+                    href="#"
+                    class="block text-center story-link text-white transition-colors duration-200 rounded px-4 py-1 text-sm font-medium shadow-sm"
+                  >
+                    مشاهده لینک مرتبط
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="story-controls flex justify-center items-center gap-3 shrink-0"
+            >
+              <button
+                type="button"
+                class="next-story size-10 flex items-center justify-center rounded-full text-white text-lg transition cursor-pointer sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:-inset-s-14"
+              >
+                <i class="harmony-icon-left-open harmony-icon text-lg"></i>
+              </button>
+
+              <button
+                type="button"
+                class="text-white fullscreen-button rounded-full size-10 grid place-content-center cursor-pointer"
+              >
+                <i class="harmony-icon-resize-full-alt harmony-icon"></i>
+              </button>
+
+              <button
+                type="button"
+                class="close-story-btn size-10 closeModal grid place-content-center rounded-full sm:hidden text-white text-xl transition cursor-pointer"
+              >
+                <i class="harmony-icon-cancel harmony-icon"></i>
+              </button>
+
+              <button
+                type="button"
+                class="prev-story size-10 flex items-center justify-center rounded-full text-white text-lg transition cursor-pointer sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:-inset-e-14"
+              >
+                <i class="harmony-icon-right-open harmony-icon text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- story -->
+
     <!-- start-js -->
     <script src="htemplate/Toranj/Assets/Component/jquery/jquery-4.0.0.min.js"></script>
     <script
@@ -4221,6 +4431,7 @@
     ></script>
 
     <script src="htemplate/Toranj/Assets/Component/swiper/swiper-bundle.min.js"></script>
+    <script src="htemplate/Toranj/Assets/Js/story/story.js"></script>
 
     <script src="htemplate/Toranj/Assets/Js/Index/Index.js"></script>
     <script>
