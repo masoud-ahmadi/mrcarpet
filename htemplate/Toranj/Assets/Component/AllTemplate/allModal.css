@@ -159,13 +159,7 @@
 /* group-design */
 
 
-/* faq */
 
-.h_faq .accordion-menu .open .harmony-icon {
-  transform: rotate(-180deg);
-  transition: transform 300ms ease-in;
-}
-/* faq */
 
 .hmodal#shopFilter{
     inset-inline-start: -100%;
@@ -181,14 +175,13 @@
 }
 
 
-.faq_content {
-  transition: background-color 500ms ease-in-out;
-  color: #121212;
+/* faq */
+
+.h_faq .accordion-menu .open .harmony-icon {
+  transform: rotate(-180deg);
+  transition: transform 300ms ease-in;
 }
-.faq_content.open {
-  background-color: #ffffff;
-  
-}
+/* faq */
 
 .faq_content {
   counter-increment: faq-counter;

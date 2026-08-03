@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   const swiper = new Swiper('.banner_slider', {
     effect: 'cards',
@@ -12,7 +13,7 @@ $(document).ready(function () {
       rotate: true,
       slideShadows: false,
     },
-
+    
     lazy: {
       loadPrevNext: true,
       loadPrevNextAmount: 1,
@@ -25,11 +26,14 @@ $(document).ready(function () {
     },
   });
 
-  const slidernew = new Swiper('.best_slider_product', {
+  const sliderdiscount = new Swiper('.discount_slider_product', {
     lazy: {
       loadPrevNext: true,
       loadPrevNextAmount: 1,
     },
+
+    slidesOffsetBefore: 10,
+    slidesOffsetAfter: 10,
 
     freeMode: true,
     loop: false,
@@ -50,28 +54,18 @@ $(document).ready(function () {
     },
   });
 
-  $('.btn-prev-best').on('click', function (e) {
-    e.preventDefault();
-    slidernew.slideNext();
-  });
-
-  $('.btn-next-best').on('click', function (e) {
-    e.preventDefault();
-    slidernew.slidePrev();
-  });
-
-  const sliderdiscount = new Swiper('.discount_slider_product', {
+  const slidernew = new Swiper('.new_slider_product', {
     lazy: {
       loadPrevNext: true,
       loadPrevNextAmount: 1,
     },
-
+    slidesOffsetBefore: 10,
+    slidesOffsetAfter: 10,
     freeMode: true,
     loop: false,
     rtl: true,
     slidesPerView: 'auto',
     spaceBetween: 15,
-
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -85,14 +79,14 @@ $(document).ready(function () {
     },
   });
 
-  $('.btn-prev-discount').on('click', function (e) {
+  $('.btn-prev-new').on('click', function (e) {
     e.preventDefault();
-    sliderdiscount.slideNext();
+    slidernew.slideNext();
   });
 
-  $('.btn-next-discount').on('click', function (e) {
+  $('.btn-next-new').on('click', function (e) {
     e.preventDefault();
-    sliderdiscount.slidePrev();
+    slidernew.slidePrev();
   });
 
   $(function () {
@@ -146,11 +140,12 @@ $(document).ready(function () {
     });
   });
 
-  const slidertop = new Swiper('.top_slider_product', {
+  const slidercolor = new Swiper('.color_slider_product', {
     lazy: {
       loadPrevNext: true,
       loadPrevNextAmount: 1,
     },
+    
 
     loop: false,
     rtl: true,
@@ -160,6 +155,67 @@ $(document).ready(function () {
     grid: {
       rows: 2,
       fill: 'row',
+    },
+  });
+
+   $('.btn-prev-color').on('click', function (e) {
+     e.preventDefault();
+     slidercolor.slideNext();
+   });
+
+   $('.btn-next-color').on('click', function (e) {
+     e.preventDefault();
+     slidercolor.slidePrev();
+   });
+
+   const slidercontract = new Swiper('.contract_slider_product', {
+     speed: 1000,
+     freeMode: true,
+     lazy: {
+       loadPrevNext: true,
+       loadPrevNextAmount: 1,
+     },
+
+     slidesOffsetBefore: 10,
+     slidesOffsetAfter: 10,
+
+     loop: true,
+     rtl: true,
+     spaceBetween: 10,
+     slidesPerView: 'auto',
+   });
+
+
+  const sliderbrand = new Swiper('.brand_slider', {
+    speed: 2000,
+    loop: true,
+    rtl: true,
+    spaceBetween: 20,
+    slidesPerView: 2,
+
+    breakpoints: {
+      480: {
+        slidesPerView: 3,
+        
+      },
+      640: {
+        slidesPerView: 4,
+        
+      },
+      768: {
+        slidesPerView: 5,
+        
+      },
+      1024: {
+        slidesPerView: 6,
+        
+      },
+      
+    },
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
   });
 

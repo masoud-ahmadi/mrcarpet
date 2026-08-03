@@ -232,7 +232,7 @@ li.harmony-menu-li:hover > .harmony-menu-li-ul {
 
 .dropdown .dropdown-box {
   position: absolute;
-  top: 70px;
+  top: 50px;
   inset-inline-start: 0;
   display: flex;
   width: 100%;
@@ -278,22 +278,10 @@ li.harmony-menu-li:hover > .harmony-menu-li-ul {
 .dropdown .menu_tab a {
   direction: rtl;
   /* font-size: 0.75rem; */
-  color: #121212;
-  background-color: #ffffff;
+
 }
 
 
-.dropdown .menu_tab a.active {
-  background-color:var(--theme-primary);
-  direction: rtl;
-  color: #121212;
-}
-
-.dropdown .menu_tab a:hover {
-  background-color: var(--theme-primary-500);
-  
-  color:#ffffff;
-}
 
 .dropdown .dropdown-box::after {
   content: '';
