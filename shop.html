@@ -1259,9 +1259,9 @@
     <!-- end-section-1 -->
 
     <!--start_section_2-->
-    <section class="py-5 min-h-dvh">
+    <section class="min-h-dvh">
       <div class="container grid grid-cols-1 lg:grid-cols-12 gap-10">
-        <aside class="md:col-span-3 order-2 lg:order-1">
+        <aside class="md:col-span-3 hidden lg:block">
           <div class="sticky top-5 space-y-5">
             <div class="p-3 bg-gray-100 rounded-2xl">
               <div>
@@ -1448,12 +1448,12 @@
             <div class="p-3 bg-gray-100 rounded-2xl space-y-3">
               <div>
                 <h2 class="text-lg font-semibold">
-                  براساس 
+                  براساس
                   <span class="text-theme-primary">قیمت</span>
                 </h2>
                 <span class="text-xs text-gray-500 block">Price</span>
               </div>
-              
+
               <div class="p-2 space-y-4 price-range">
                 <div class="">
                   <div class="relative z-1" dir="ltr">
@@ -1520,36 +1520,17 @@
             </div>
           </div>
         </aside>
-        <div class="space-y-5 lg:col-span-9 order-1 lg:order-2">
-          <div class="flex items-center gap-2 flex-wrap">
-            <span>
-              <i class="harmony-icon-sort-alt-down harmony-icon text-lg"></i>
-              مرتب سازی :
-            </span>
-            <a
-              href="#"
-              class="text-nowrap hover:text-theme-primary duration-200 text-sm"
+        <div class="space-y-5 lg:col-span-9">
+          <div class="lg:hidden flex justify-end">
+            <button
+              type="button"
+              aria-label="باز کردن فیلتر"
+              class="flex items-center gap-2 show-btn"
+              data-modal="filter"
             >
-              جدیدترین
-            </a>
-            <a
-              href="#"
-              class="text-nowrap hover:text-theme-primary duration-200 text-sm"
-            >
-              پربازدیدترین
-            </a>
-            <a
-              href="#"
-              class="text-nowrap hover:text-theme-primary duration-200 text-sm"
-            >
-              جدیدترین
-            </a>
-            <a
-              href="#"
-              class="text-nowrap hover:text-theme-primary duration-200 text-sm"
-            >
-              قدیمی ترین
-            </a>
+              <i class="text-2xl harmony-icon harmony-icon-sliders"></i>
+              <p class="text-x">فیلتر</p>
+            </button>
           </div>
 
           <div
@@ -2281,19 +2262,19 @@
               class="rounded-full size-10 overflow-hidden grid place-content-center shrink-0"
             >
               <img
-                src="htemplate/Ravi/Assets/Images/User/user.png"
+                src="htemplate/Toranj/Assets/Images/User/user.png"
                 alt="user"
                 class="size-full object-cover"
                 title="user"
               />
             </div>
             <div class="flex-1">
-              <p class="line-clamp-1 text-sm">(hpname)</p>
+              <p class="line-clamp-1 text-white text-sm">(hpname)</p>
             </div>
           </a>
           <button
             type="button"
-            class="shrink-0 btnClose cursor-pointer text-black size-7 p-2 grid place-content-center rounded-full"
+            class="shrink-0 btnClose cursor-pointer bg-white text-black size-7 p-2 grid place-content-center rounded-full"
           >
             <i class="harmony-icon-cancel-2 text-2xl harmony-icon"></i>
           </button>
@@ -2317,6 +2298,306 @@
       </div>
     </div>
     <!-- SideRight -->
+
+    <!--menu_filter-->
+    <div
+      class="hmodal shadow-sm fixed bottom-0 top-0 h-full overflow-hidden bg-gray-100  shrink-0"
+      id="shopFilter"
+      data-modal="filter"
+    >
+      <div
+        class="h-full relative flex flex-col flex-1 overflow-y-auto size-full"
+      >
+        <div
+          class="flex justify-between items-center p-2 border-b sticky top-0 z-30 gap-3 bg-theme-primary"
+        >
+          <a href="signin" class="flex items-center gap-2 flex-1">
+            <div
+              class="rounded-full size-10 overflow-hidden grid place-content-center shrink-0"
+            >
+              <img
+                src="htemplate/Toranj/Assets/Images/User/user.png"
+                alt="user"
+                class="size-full object-cover"
+                title="user"
+              />
+            </div>
+            <div class="flex-1">
+              <p class="line-clamp-1 text-sm text-white">(hpname)</p>
+            </div>
+          </a>
+          <button
+            type="button"
+            class="shrink-0 btnClose cursor-pointer bg-white text-black size-7 p-2 grid place-content-center rounded-full"
+          >
+            <i class="harmony-icon-cancel-2 text-2xl harmony-icon"></i>
+          </button>
+        </div>
+        <div class="size-full p-3">
+          <div>
+            <h2 class="text-lg font-semibold">
+              فیلتر
+              <span class="text-theme-primary">محصولات</span>
+            </h2>
+            <span class="text-xs text-gray-500 block">Filters</span>
+          </div>
+          <ul class="relative overflow-hidden accordion-menu">
+            <li>
+              <div
+                class="flex items-center justify-between p-2 cursor-pointer dropdownlink text-sm"
+              >
+                <span>دسته بندی محصولات</span>
+                <i class="harmony-icon-down-open-1 harmony-icon"></i>
+              </div>
+              <ul class="pb-2 space-y-2 overflow-y-auto submenuItems max-h-52">
+                 <li>
+                      <a
+                        href="(link)"
+                        class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                      >
+                        <span
+                          class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                        ></span>
+                        <h3
+                          class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                        >
+                          (title)
+                        </h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="(link)"
+                        class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                      >
+                        <span
+                          class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                        ></span>
+                        <h3
+                          class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                        >
+                          (title)
+                        </h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="(link)"
+                        class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                      >
+                        <span
+                          class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                        ></span>
+                        <h3
+                          class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                        >
+                          (title)
+                        </h3>
+                      </a>
+                    </li>
+              </ul>
+            </li>
+            <li>
+              <div
+                class="flex items-center justify-between px-2 py-3 cursor-pointer dropdownlink"
+              >
+                <span>براساس برند</span>
+                <i class="harmony-icon-down-open-1 harmony-icon"></i>
+              </div>
+              <ul
+                    class="py-2 space-y-2 overflow-y-auto submenuItems max-h-52"
+                  >
+                    <li>
+                      <a
+                        href="(link)"
+                        class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                      >
+                        <span
+                          class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                        ></span>
+                        <h3
+                          class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                        >
+                          (title)
+                        </h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="(link)"
+                        class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                      >
+                        <span
+                          class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                        ></span>
+                        <h3
+                          class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                        >
+                          (title)
+                        </h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="(link)"
+                        class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                      >
+                        <span
+                          class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                        ></span>
+                        <h3
+                          class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                        >
+                          (title)
+                        </h3>
+                      </a>
+                    </li>
+                  </ul>
+            </li>
+            <li>
+              <div
+                class="flex items-center justify-between px-2 py-3 cursor-pointer dropdownlink"
+              >
+                <span>براساس رنگ</span>
+                <i class="harmony-icon-down-open-1 harmony-icon"></i>
+              </div>
+              <ul class="py-2 space-y-2 overflow-y-auto submenuItems max-h-52">
+                <li>
+                  <a
+                    href="(link)"
+                    class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                  >
+                    <span
+                      class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                    ></span>
+                    <h3
+                      class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                    >
+                      (title)
+                    </h3>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="(link)"
+                    class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                  >
+                    <span
+                      class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                    ></span>
+                    <h3
+                      class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                    >
+                      (title)
+                    </h3>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="(link)"
+                    class="flex items-center gap-1 group border bg-white rounded-lg p-2 hover:border-theme-primary-500 hover:bg-theme-primary duration-200"
+                  >
+                    <span
+                      class="border-10 border-gray-300 group-hover:border-r-white border-l-transparent border-t-transparent border-b-transparent block"
+                    ></span>
+                    <h3
+                      class="line-clamp-1 text-xs text-black group-hover:text-white group-hover:ps-2 duration-200"
+                    >
+                      (title)
+                    </h3>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="space-y-3">
+            <div>
+              <h2 class="text-lg font-semibold">
+                براساس
+                <span class="text-theme-primary">قیمت</span>
+              </h2>
+              <span class="text-xs text-gray-500 block">Price</span>
+            </div>
+            <div class="p-2 space-y-4 price-range">
+              <div class="">
+                <div class="relative z-1" dir="ltr">
+                  <div class="h-2 bg-gray-200 rounded"></div>
+                  <div
+                    class="absolute top-0 h-full bg-theme-primary rounded range"
+                  ></div>
+
+                  <input
+                    type="range"
+                    min="0"
+                    max="300000000"
+                    step="1000000"
+                    value="0"
+                    class="absolute w-full top-1/2 -translate-y-1/2 minRange bg-transparent"
+                  />
+
+                  <input
+                    type="range"
+                    min="0"
+                    max="300000000"
+                    step="1000000"
+                    value="180000000"
+                    class="absolute w-full top-1/2 -translate-y-1/2 maxRange bg-transparent"
+                  />
+                </div>
+                <div class="flex justify-between items-center mt-1">
+                  <span class="text-xs">بیشترین</span>
+                  <span class="text-xs">کمترین</span>
+                </div>
+              </div>
+
+              <!-- Inputs -->
+              <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                  <span class="text-sm text-theme-gray-800">از</span>
+                  <input
+                    readonly
+                    class="w-full p-2 focus:outline-0 focus:border-theme-primary bg-white border border-gray-300 rounded-lg minInput"
+                    value="70,000,000"
+                  />
+                  <span class="text-gray-400 text-sm">تومان</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span class="text-sm text-theme-gray-800">تا</span>
+                  <input
+                    readonly
+                    class="w-full p-2 focus:outline-0 focus:border-theme-primary border bg-white border-gray-300 rounded-lg maxInput"
+                    value="180,000,000"
+                  />
+                  <span class="text-gray-400 text-sm">تومان</span>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <button
+                type="button"
+                class="mt- w-full bg-blue-600 cursor-pointer p-2 hover:bg-blue-700 text-white rounded-lg applyBtn"
+              >
+                اعمال فیلتر
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grow"></div>
+        <div
+          class="bg-gray-200 border-t py-2 sticky bottom-0 inset-e-0 z-10 text-center"
+        >
+          <a
+            href="tel:(phone)"
+            class="text-center text-lg text-theme-primary block font-semibold"
+            >(phone)</a
+          >
+          <p class="text-xs">با ما درتماس باشید</p>
+        </div>
+      </div>
+    </div>
+    <!--menu_filter-->
 
     <!-- start-support -->
     <div
