@@ -26,13 +26,13 @@
   --background-menu-horizontal-li-ul: #fff;
   --max-width-menu-horizontal-li-ul: 100%;
   --min-width-menu-horizontal-li-ul: 100%;
-  --hover-menu-horizontal-a: var(--theme-primary-500);
-  --after-bg-h-header-a: var(--theme-primary-500);
+  --hover-menu-horizontal-a: var(--theme-primary);
+  --after-bg-h-header-a: var(--theme-primary);
   --borderColor-menu-horizontal-a: #dedede;
   --border-width-menu-horizontal-a: 1px;
   --gap-harmony-menu-horizontal: 0.75rem;
   --padding-menu-horizontal-a: 0.5rem;
-  --color-menu-horizontal-a: var(--theme-primary-500);
+  --color-menu-horizontal-a: var(--theme-primary);
   --gap-menu-horizontal-li-ul: 0.5rem;
   --menu-horizontal-color-angle-left: #121212;
   --horizontal-font-size: 16px;
@@ -309,7 +309,7 @@ li.harmony-menu-li:hover > .harmony-menu-li-ul {
   top: 50%;
   width: .25rem;
   height: 0; 
-  background-color: var(--theme-primary-500);
+  background-color: var(--theme-primary);
   border-radius: 20px;
   transform: translateY(-50%) scaleY(0);
   transform-origin: center;  
@@ -629,7 +629,7 @@ li.harmony-menu-li:hover > .harmony-menu-li-ul {
 /* /* design */
 
 .harmony-menu > li.harmony-menu-li:hover {
-  color: var(--theme-primary-500);
+  color: var(--theme-primary);
 }
 
 /* 

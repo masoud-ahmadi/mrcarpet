@@ -1,27 +1,6 @@
 import '../Harmony-Menu/Harmony-menu.js';
 
 $(document).ready(function () {
-  /*menu*/
-
-  $(function () {
-    var lastScrollTop = 0;
-    var $menu = $('.menu-navigation');
-
-    $(window).on('scroll', function () {
-      var scrollTop = $(this).scrollTop();
-
-      if (scrollTop < lastScrollTop) {
-        // اسکرول به بالا
-        $menu.addClass('show-navigation');
-      } else {
-        // اسکرول به پایین
-        $menu.removeClass('show-navigation');
-      }
-
-      lastScrollTop = scrollTop;
-    });
-  });
-  /*menu*/
 
   var Accordion = function (el, multiple) {
     this.el = el;

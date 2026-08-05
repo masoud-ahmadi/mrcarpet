@@ -1357,8 +1357,8 @@
     <!-- end-section-1 -->
 
     <!-- start-section-2 -->
-    <section class="relative bg-theme-primary-100 py-5 md:py-10">
-      <div class="container space-y-5 md:space-y-10">
+    <section class="relative bg-theme-primary-100 py-5 lg:py-10">
+      <div class="container">
         <div class="space-y-5 lg:space-y-8">
           <div class="flex items-center justify-center gap-5 text-center">
             <div class="space-y-5">
@@ -1399,7 +1399,6 @@
           </div>
 
           <div class="flex flex-wrap justify-center items-center gap-2">
-            
             <a
               href="#"
               class="px-3 py-1 rounded-full bg-gray-100 hover:bg-theme-primary border shadow hover:text-white transition text-xs sm:text-sm border-gray-300"
@@ -1435,7 +1434,9 @@
             </a>
           </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-[500px_minmax(0,1fr)] gap-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-[500px_minmax(0,1fr)] gap-x-10 gap-y-5 py-10"
+        >
           <div class="grid grid-cols-3 gap-3 sm:gap-5">
             <a
               href="#"
@@ -1536,7 +1537,7 @@
           </div>
           <div class="relative">
             <div class="color_slider_product swiper h-full">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper pt-5">
                 <div class="swiper-slide w-auto! mt-1">
                   <div class="flex items-center justify-center size-full">
                     <a
@@ -2007,7 +2008,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex items-center justify-center gap-5">
+            <div class="flex items-center justify-center gap-5 mt-5">
               <button
                 type="button"
                 aria-label="اسلاید بعدی"
@@ -2031,17 +2032,20 @@
     <!-- end-section-2 -->
 
     <!-- start-section-3-->
-    <section class="py-10 overflow-hidden">
-      <div class="container relative z-1 lg:px-5 space-y-3 pt-8 pb-5">
+    <section class="lg:py-10 overflow-hidden">
+      <div
+        class="container relative z-1 lg:px-5 space-y-3 pt-10 pb-10 lg:pt-8 lg:pb-5"
+      >
         <span
-          class="absolute inset-y-0 max-w-lg w-full bg-theme-primary-900 inset-s-0 section_design rounded-3xl -z-1 hidden lg:block text-white"
+          class="absolute inset-y-0 lg:max-w-lg w-full bg-theme-primary-900 inset-s-0 section_design lg:rounded-3xl -z-1 block text-white"
         >
         </span>
-
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-10 max-w-lg w-full">
+        <div class="flex justify-between items-center gap-5">
+          <div
+            class="flex items-center gap-10 lg:justify-between lg:max-w-lg w-full"
+          >
             <div class="shrink-0">
-              <h3 class="text-lg font-semibold lg:text-white">
+              <h3 class="text-sm sm:text-lg font-semibold text-white">
                 تخفیف های استثنایی
               </h3>
               <span class="text-xs block text-theme-secondary"
@@ -2049,7 +2053,7 @@
               >
             </div>
             <div data-enddate="7" class="et-timer">
-              <div class="flex items-center justify-center w-max gap-2">
+              <div class="flex items-center justify-center w-max gap-1">
                 <div class="text-xs">
                   <span
                     class="grid timer-count place-content-center seconds w-6 text-white"
@@ -2095,7 +2099,7 @@
           <div class="hidden sm:block shrink-0">
             <a
               href="#"
-              class="font-borna flex gap-2 hover:text-theme-primary items-center"
+              class="font-borna flex gap-2 hover:text-theme-primary items-center text-white lg:text-black"
             >
               <span class="block text-xs font-semibold">مشـاهده هــمــه</span>
               <i class="harmony-icon-left-small harmony-icon text-xl"></i>
@@ -2558,14 +2562,14 @@
       <div class="container space-y-5">
         <div class="flex items-center gap-3">
           <span
-            class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-10 h-12 block"
+            class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-7 h-7 sm:w-10 sm:h-12 block"
           ></span>
-          <h2 class="text-3xl font-black">
+          <h2 class="text-lg sm:text-3xl font-semibold">
             دسته بندی
             <span class="text-theme-primary">محصولات</span>
           </h2>
         </div>
-        <div class="grid lg:grid-cols-4 gap-6">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <a
             href="#"
             class="group min-h-32 rounded-xl bg-black overflow-hidden relative shadow-xl flex items-center justify-start z-1 p-5"
@@ -2689,12 +2693,14 @@
         <div class="flex justify-between items-center">
           <div class="flex items-center justify-between w-60">
             <div>
-              <h3 class="text-lg font-semibold">جدیدترین محصولات</h3>
+              <h3 class="text-lg lg:text-2xl font-semibold">
+                جدیدترین محصولات
+              </h3>
               <span class="text-xs block text-gray-500">New Product’s</span>
             </div>
           </div>
 
-          <div class="hidden sm:block shrink-0">
+          <div class="shrink-0">
             <a
               href="#"
               class="font-borna flex gap-2 hover:text-theme-primary items-center"
@@ -2719,6 +2725,7 @@
               >
                 <i class="harmony-icon-right-small harmony-icon"></i>
               </button>
+
               <button
                 type="button"
                 aria-label="اسلاید قبلی"
@@ -3166,16 +3173,6 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-center sm:hidden">
-          <a href="#" class="bg-white rounded-2xl p-1 group min-w-32">
-            <span
-              class="border rounded-2xl flex text-center lg:flex-col items-center group-hover:bg-theme-primary duration-200 p-2 justify-between lg:justify-center"
-            >
-              <span class="block text-sm font-semibold">مشاهده همه</span>
-              <i class="harmony-icon-left-small harmony-icon"></i>
-            </span>
-          </a>
-        </div>
       </div>
     </section>
     <!-- end-section-5-->
@@ -3184,17 +3181,17 @@
 
     <section class="py-10 relative">
       <span
-        class="clip-path-left absolute top-0 inset-e-0 w-1/4 bg-theme-primary h-5"
+        class="clip-path-left absolute top-0 inset-e-0 w-1/2 sm:w-1/4 bg-theme-primary h-5"
       ></span>
       <span
-        class="clip-path-right absolute bottom-0 inset-s-0 w-1/4 bg-theme-primary h-5"
+        class="clip-path-right absolute bottom-0 inset-s-0 w-1/2 sm:w-1/4 bg-theme-primary h-5"
       ></span>
       <div class="container space-y-5">
         <div class="flex items-center gap-3">
           <span
-            class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-10 h-12 block"
+            class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-7 h-7 sm:w-10 sm:h-12 block"
           ></span>
-          <h2 class="text-3xl font-black">
+          <h2 class="text-lg sm:text-3xl font-semibold">
             برندهای
             <span class="text-theme-primary">اختصاصی</span>
           </h2>
@@ -3250,14 +3247,14 @@
     <!-- start-section-7 -->
 
     <!-- start-section-8-->
-    <section class="py-10 relative">
-      <div class="container relative">
+    <section class="pt-5 pb-0 lg:pt-10 lg:pb-10 relative">
+      <div class="lg:max-w-7xl mx-auto lg:px-4 relative">
         <img
           src="htemplate/Toranj/Assets/Images/design/shape2.png"
           loading="lazy"
           alt=""
           title=""
-          class="absolute inset-s-10 translate-x-full top-1/2 -translate-y-1/2 max-w-40 w-full"
+          class="absolute inset-s-10 translate-x-full top-1/2 -translate-y-1/2 max-w-40 w-full hidden 2xl:block"
           width=""
           height=""
         />
@@ -3266,12 +3263,12 @@
           loading="lazy"
           alt=""
           title=""
-          class="absolute inset-e-10 scale-x-[-1] -translate-x-full top-1/2 -translate-y-1/2 max-w-40 w-full"
+          class="absolute inset-e-10 scale-x-[-1] -translate-x-full top-1/2 -translate-y-1/2 max-w-40 w-full hidden 2xl:block"
           width=""
           height=""
         />
         <div
-          class="min-h-110 rounded-2xl overflow-hidden relative flex items-center z-1"
+          class="md:min-h-110 lg:rounded-2xl overflow-hidden relative p-5 z-1 flex items-center justify-center"
         >
           <img
             src="htemplate/Toranj/Assets/Images/design/video-section.jpg"
@@ -3282,61 +3279,72 @@
             width=""
             height=""
           />
-          <div class="space-y-3 max-w-xs shrink-0 ps-10">
-            <p class="text-sm text-theme-secondary-400">داستان آقای فرش</p>
-            <h2 class="text-3xl text-white font-borna">با عشق به اصالت</h2>
-            <p class="text-xs text-gray-300 leading-relaxed">
-              تأمین و عرضه متمرکز و متنوع فرش های ماشینی و دستبافت و سایر
-              محصولات جانبی، از برندهای منتخب مطرح ایرانی و خارجی از طریق ارائه
-              خدمات با کیفیت و نوآورانه در محیطی مطلوب، توأم با آرامش و دسترسی
-              مناسب برای مشتریان
-            </p>
-            <div class="flex items-center justify-around mt-10 stats-counter">
-              <div class="text-center counter" data-range="20">
-                <p
-                  class="text-3xl font-black progress-number text-theme-secondary-400"
-                  dir="auto"
-                >
-                  0
-                </p>
-                <p class="text-sm text-gray-300">سال تجربه</p>
-              </div>
+          <div
+            class="flex flex-col md:flex-row items-center backdrop-blur-sm p-5 rounded-2xl gap-5 w-full"
+          >
+            <div class="space-y-3 md:max-w-xs shrink-0 lg:ps-10">
+              <p class="text-sm text-theme-secondary-400">داستان آقای فرش</p>
+              <h2 class="text-3xl text-white font-borna">با عشق به اصالت</h2>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                تأمین و عرضه متمرکز و متنوع فرش های ماشینی و دستبافت و سایر
+                محصولات جانبی، از برندهای منتخب مطرح ایرانی و خارجی از طریق
+                ارائه خدمات با کیفیت و نوآورانه در محیطی مطلوب، توأم با آرامش و
+                دسترسی مناسب برای مشتریان
+              </p>
+              <div class="flex items-center justify-around mt-10 stats-counter">
+                <div class="text-center counter" data-range="20">
+                  <p
+                    class="text-3xl font-black progress-number text-theme-secondary-400"
+                    dir="auto"
+                  >
+                    0
+                  </p>
+                  <p class="text-sm text-gray-300">سال تجربه</p>
+                </div>
 
-              <div
-                class="text-center counter text-theme-secondary-400"
-                data-range="200"
-              >
-                <p class="text-3xl font-black progress-number" dir="auto">0</p>
-                <p class="text-sm text-gray-300">محصول منتخب</p>
-              </div>
-
-              <div class="text-center counter" data-range="200">
-                <p
-                  class="text-3xl font-black progress-number text-theme-secondary-400"
-                  dir="auto"
+                <div
+                  class="text-center counter text-theme-secondary-400"
+                  data-range="200"
                 >
-                  0
-                </p>
-                <p class="text-sm text-gray-300">مشتری راضی</p>
+                  <p class="text-3xl font-black progress-number" dir="auto">
+                    0
+                  </p>
+                  <p class="text-sm text-gray-300">محصول منتخب</p>
+                </div>
+
+                <div class="text-center counter" data-range="200">
+                  <p
+                    class="text-3xl font-black progress-number text-theme-secondary-400"
+                    dir="auto"
+                  >
+                    0
+                  </p>
+                  <p class="text-sm text-gray-300">مشتری راضی</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="flex-1 grid place-content-center relative z-1">
-            <img
-              src="htemplate/Toranj/Assets/Images/design/shape.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="size-24 absolute right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2 -z-1"
-              width="240"
-              height="160"
-            />
-            <button
-              type="button"
-              class="bg-white size-12 rounded-full grid place-content-center cursor-pointer active:scale-95 duration-200"
-            >
-              <i class="harmony-icon-play harmony-icon text-4xl z-1"></i>
-            </button>
+            <div class="flex-1 grid place-content-center relative z-1 w-full">
+              <div
+                class="relative md:absolute md:right-1/2 md:translate-x-1/2 md:top-1/2 md:-translate-y-1/2 grid place-content-center"
+              >
+                <img
+                  src="htemplate/Toranj/Assets/Images/design/shape.png"
+                  loading="lazy"
+                  alt=""
+                  title=""
+                  class="size-20 md:size-24 -z-1 shrink-0"
+                  width="240"
+                  height="160"
+                />
+                <a
+                  href="#"
+                  type="button"
+                  class="bg-white size-10 md:size-12 rounded-full cursor-pointer active:scale-95 duration-200 absolute right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2 grid place-content-center"
+                >
+                  <i class="harmony-icon-play harmony-icon text-4xl z-1"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -3349,14 +3357,14 @@
         <div class="flex items-center justify-center">
           <div class="flex items-center gap-5">
             <span
-              class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-10 h-12 block"
+              class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-7 h-7 sm:w-10 sm:h-12 block"
             ></span>
-            <h2 class="text-3xl font-black">
+            <h2 class="text-lg sm:text-3xl font-semibold">
               طرف
               <span class="text-theme-primary">قرارداد باما</span>
             </h2>
             <span
-              class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-10 h-12 block"
+              class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-7 h-7 sm:w-10 sm:h-12 block"
             ></span>
           </div>
         </div>
@@ -3758,12 +3766,13 @@
     </section>
     <!-- end-section-9-->
 
-    <!-- start-section-8 -->
+    <!-- start-section-10 -->
     <section
       class="py-10 lg:py-14 min-h-145 z-1 bg-[url(../../Images/design/faq-bg.png)] bg-no-repeat bg-top bg-gray-100"
     >
       <div class="container space-y-10">
-        <div class="text-center">
+        <div class="space-y-10" (hasfaq)>
+           <div class="text-center" >
           <div class="relative">
             <span
               class="inline-flex px-4 py-1.5 ms-36 -rotate-10 text-xs rounded-lg bg-theme-primary shadow-[0_7px_17px_-6px] shadow-theme-primary text-white"
@@ -3773,7 +3782,7 @@
           </div>
         </div>
 
-        <div class="h_faq max-w-xl mx-auto" (hasfaq)>
+        <div class="h_faq max-w-xl mx-auto" >
           <ul class="accordion-menu space-y-3">
             <li
               class="faq_content [&.open_.dropdownlink]:bg-theme-primary [&.open_.dropdownlink]:text-white [&.open_.submenuItems]:bg-white [&.open_.questiontitle]:text-xl space-y-2"
@@ -3882,10 +3891,9 @@
             </li>
           </ul>
         </div>
-        <div
-          class="overflow-hidden  bg-white rounded-2xl border"
-          (hasseobox)
-        >
+        </div>
+       
+        <div class="overflow-hidden bg-white rounded-2xl border" (hasseobox)>
           <div class="space-y-5 relative">
             <div class="relative">
               <div class="introduction-wrapper relative">
@@ -4033,133 +4041,137 @@
         </div>
       </div>
     </section>
-    <!-- end-section-8 -->
+    <!-- end-section-10 -->
 
     <!-- start-footer -->
-    <section class="pt-10 pb-5">
-      <div
-        class="container rounded-2xl bg-theme-primary p-10 space-y-10 relative"
-      >
-        <a
-          href="#"
-          class="absolute inset-s-1/2 translate-x-1/2 top-0 rounded-2xl grid place-content-center h-8 w-6 bg-white focus:outline-0 hover:bg-theme-secondary duration-200"
+    <section class="pt-10 pb-10 md:pb-0 lg:pb-5">
+      <div class="lg:max-w-7xl mx-auto lg:px-4">
+        <div
+          class="lg:rounded-2xl bg-theme-primary pt-10 pb-5 px-5 lg:px-10 space-y-5 sm:space-y-10 relative"
         >
-          <i class="harmony-icon-left-small harmony-icon text-xl rotate-90"></i>
-        </a>
-        <span
-          class="shape_disgn inset-s-1/2 translate-x-1/2 absolute bg-theme-primary top-0 -translate-y-full scale-y-[-1] w-16 p-2"
-        >
-        </span>
-        <div class="flex flex-wrap gap-10">
-          <div class="grid grid-cols-3 gap-5 flex-1">
-            <div class="space-y-2">
-              <div
-                class="font-semibold flex items-center gap-2 text-white text-lg"
-              >
-                <span>دسـتـه بندی ها</span>
+          <a
+            href="#"
+            class="absolute inset-s-1/2 translate-x-1/2 top-0 rounded-2xl grid place-content-center h-8 w-6 bg-white focus:outline-0 hover:bg-theme-secondary duration-200"
+          >
+            <i
+              class="harmony-icon-left-small harmony-icon text-xl rotate-90"
+            ></i>
+          </a>
+          <span
+            class="shape_disgn inset-s-1/2 translate-x-1/2 absolute bg-theme-primary top-0 -translate-y-full scale-y-[-1] w-16 p-2"
+          >
+          </span>
+          <div class="flex flex-col gap-5 lg:flex-row md:gap-10">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-5 flex-1">
+              <div class="space-y-2">
+                <div
+                  class="font-semibold flex items-center gap-2 text-white text-lg"
+                >
+                  <span>دسـتـه بندی ها</span>
+                </div>
+                <div class="space-y-3 ps-2">
+                  <a
+                    href="(url)"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <span class="size-1 bg-white rounded-full block"></span>
+                    فرش ماشینی
+                  </a>
+                  <a
+                    href="(url)"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <span class="size-1 bg-white rounded-full block"></span>
+                    فرش دستباف
+                  </a>
+                  <a
+                    href="(url)"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <span class="size-1 bg-white rounded-full block"></span>
+                    تابلو فرش دستباف
+                  </a>
+                  <a
+                    href="(url)"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <span class="size-1 bg-white rounded-full block"></span>
+                    سایر محصولات
+                  </a>
+                </div>
               </div>
-              <div class="space-y-3 ps-2">
-                <a
-                  href="(url)"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+              <div class="space-y-2">
+                <div
+                  class="font-semibold flex items-center gap-2 text-white text-lg"
                 >
-                  <span class="size-1 bg-white rounded-full block"></span>
-                  فرش ماشینی
-                </a>
-                <a
-                  href="(url)"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  <span>لینک های مفید</span>
+                </div>
+                <div class="space-y-3 ps-2">
+                  <a
+                    href="#"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <span class="size-1 bg-white rounded-full block"></span>
+                    فروشگاه
+                  </a>
+                  <a
+                    href="#"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <span class="size-1 bg-white rounded-full block"></span>
+                    مقالات
+                  </a>
+                  <a
+                    href="#"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <span class="size-1 bg-white rounded-full block"></span>
+                    ارتباط با ما
+                  </a>
+                  <a
+                    href="#"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <span class="size-1 bg-white rounded-full block"></span>
+                    درباره ما
+                  </a>
+                </div>
+              </div>
+              <div class="space-y-2 col-span-2 md:col-span-1">
+                <div
+                  class="font-semibold flex items-center gap-2 text-white text-lg"
                 >
-                  <span class="size-1 bg-white rounded-full block"></span>
-                  فرش دستباف
-                </a>
-                <a
-                  href="(url)"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <span class="size-1 bg-white rounded-full block"></span>
-                  تابلو فرش دستباف
-                </a>
-                <a
-                  href="(url)"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <span class="size-1 bg-white rounded-full block"></span>
-                  سایر محصولات
-                </a>
+                  <span>ارتباط با ما</span>
+                </div>
+                <div class="space-y-3 ps-2">
+                  <a
+                    href="contact"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <i class="harmony-icon-location harmony-icon text-lg"></i>
+                    دفتر مرکزی:تهران، خیابان شریعتی، بالاتر از پل سیدخندان،
+                    خیابان مجتبایی، پلاک 10
+                  </a>
+                  <a
+                    href="tel:(phone)"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <i class="harmony-icon-phone-1 harmony-icon text-lg"></i>
+                    09103822616
+                  </a>
+                  <a
+                    href="tmailto:(email)"
+                    class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
+                  >
+                    <i class="harmony-icon-mail-alt harmony-icon text-lg"></i>
+                    masoudahmadi@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="space-y-2">
-              <div
-                class="font-semibold flex items-center gap-2 text-white text-lg"
-              >
-                <span>لینک های مفید</span>
-              </div>
-              <div class="space-y-3 ps-2">
-                <a
-                  href="#"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <span class="size-1 bg-white rounded-full block"></span>
-                  فروشگاه
-                </a>
-                <a
-                  href="#"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <span class="size-1 bg-white rounded-full block"></span>
-                  مقالات
-                </a>
-                <a
-                  href="#"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <span class="size-1 bg-white rounded-full block"></span>
-                  ارتباط با ما
-                </a>
-                <a
-                  href="#"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <span class="size-1 bg-white rounded-full block"></span>
-                  درباره ما
-                </a>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <div
-                class="font-semibold flex items-center gap-2 text-white text-lg"
-              >
-                <span>ارتباط با ما</span>
-              </div>
-              <div class="space-y-3 ps-2">
-                <a
-                  href="contact"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <i class="harmony-icon-location harmony-icon text-lg"></i>
-                  دفتر مرکزی:تهران، خیابان شریعتی، بالاتر از پل سیدخندان، خیابان
-                  مجتبایی، پلاک 10
-                </a>
-                <a
-                  href="tel:(phone)"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <i class="harmony-icon-phone-1 harmony-icon text-lg"></i>
-                  09103822616
-                </a>
-                <a
-                  href="tmailto:(email)"
-                  class="text-white hover:text-theme-secondary duration-200 hover:ms-2 text-sm flex items-center gap-2"
-                >
-                  <i class="harmony-icon-mail-alt harmony-icon text-lg"></i>
-                  masoudahmadi@gmail.com
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 min-w-32 flex items-center justify-center">
-            <div class="space-y-5">
+            <div
+              class="shrink-0 min-w-32 flex items-center justify-center gap-5"
+            >
               <a
                 href="enamad"
                 target="_blank"
@@ -4188,75 +4200,173 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="flex flex-wrap gap-10">
-          <div
-            class="flex-1 bg-white/10 p-5 rounded-2xl flex items-center gap-10 justify-center"
-          >
-            <a href="(url)" class="inline-block shrink-0">
-              <img
-                src="htemplate/Toranj/Assets/Images/Logo/Logolight.png"
-                alt=""
-                title=""
-                class="max-w-24 size-full object-cover"
-                width="100"
-                height="70"
-              />
-            </a>
-            <p class="text-sm text-gray-100 leading-relaxed">
-              چرا آقای فرش؟ آقای فرش یکی از بزرگ‌ترین و مدرن‌ترین هایپرمارکت‌های
-              فرش ایران است که با تولیدات اختصاصی و همکاری با برندهای معتبر،
-              انواع فرش را با کیفیت بالا عرضه می‌کند. این مجموعه علاوه بر فروش
-              غیرحضوری، با ۵ شعبه در تهران، ایران‌مال، شاندیز، فردیس و قزوین،
-              دسترسی آسان برای مشتریان فراهم کرده و بهترین برندها و بافته‌های
-              ایران و جهان را ارائه می‌دهد.
-            </p>
-          </div>
-          <div class="shrink-0 min-w-32 flex items-center justify-center">
-            <div class="space-y-5">
-              <p class="text-gray-100 text-sm">با ما همراه باشید</p>
-              <div class="flex gap-2 flex-wrap">
-                <a href="(telegram)" target="_blank">
-                  <img
-                    src="htemplate/Toranj/Assets/Images/social/telegram.png"
-                    loading="lazy"
-                    alt=""
-                    title=""
-                    class=""
-                    width="25"
-                    height="25"
-                  />
-                </a>
-                <a href="(telegram)" target="_blank">
-                  <img
-                    src="htemplate/Toranj/Assets/Images/social/aparat.png"
-                    loading="lazy"
-                    alt=""
-                    title=""
-                    class=""
-                    width="25"
-                    height="25"
-                  />
-                </a>
-                <a href="(telegram)" target="_blank">
-                  <img
-                    src="htemplate/Toranj/Assets/Images/social/instagram.png"
-                    loading="lazy"
-                    alt=""
-                    title=""
-                    class=""
-                    width="25"
-                    height="25"
-                  />
-                </a>
+          <div class="flex flex-col lg:flex-row gap-x-10 gap-y-5">
+            <div
+              class="flex-1 bg-white/10 p-5 rounded-2xl flex items-center gap-y-5 gap-x-10 justify-center flex-col lg:flex-row"
+            >
+              <a href="(url)" class="inline-block shrink-0">
+                <img
+                  src="htemplate/Toranj/Assets/Images/Logo/Logolight.png"
+                  alt=""
+                  title=""
+                  class="max-w-24 size-full object-cover"
+                  width="100"
+                  height="70"
+                />
+              </a>
+              <p class="text-sm text-gray-100 leading-relaxed text-justify">
+                چرا آقای فرش؟ آقای فرش یکی از بزرگ‌ترین و مدرن‌ترین
+                هایپرمارکت‌های فرش ایران است که با تولیدات اختصاصی و همکاری با
+                برندهای معتبر، انواع فرش را با کیفیت بالا عرضه می‌کند. این
+                مجموعه علاوه بر فروش غیرحضوری، با ۵ شعبه در تهران، ایران‌مال،
+                شاندیز، فردیس و قزوین، دسترسی آسان برای مشتریان فراهم کرده و
+                بهترین برندها و بافته‌های ایران و جهان را ارائه می‌دهد.
+              </p>
+            </div>
+            <div class="shrink-0 min-w-32 flex items-center justify-center">
+              <div class="space-y-5">
+                <p class="text-gray-100 text-sm">با ما همراه باشید</p>
+                <div class="flex gap-2 flex-wrap">
+                  <a href="(telegram)" target="_blank">
+                    <img
+                      src="htemplate/Toranj/Assets/Images/social/telegram.png"
+                      loading="lazy"
+                      alt=""
+                      title=""
+                      class=""
+                      width="25"
+                      height="25"
+                    />
+                  </a>
+                  <a href="(telegram)" target="_blank">
+                    <img
+                      src="htemplate/Toranj/Assets/Images/social/aparat.png"
+                      loading="lazy"
+                      alt=""
+                      title=""
+                      class=""
+                      width="25"
+                      height="25"
+                    />
+                  </a>
+                  <a href="(telegram)" target="_blank">
+                    <img
+                      src="htemplate/Toranj/Assets/Images/social/instagram.png"
+                      loading="lazy"
+                      alt=""
+                      title=""
+                      class=""
+                      width="25"
+                      height="25"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+          <footer
+            class="flex items-center justify-center py-2 text-sm text-center text-white"
+          >
+            <div class="copyright">
+              © 2026 طراحی و توسعه توسط
+              <a
+                href="https://arianteam.com/"
+                class="copyright_website"
+                target="_blank"
+                >گروه نرم‌افزاری آرین</a
+              >. خدمات
+              <a
+                href="https://arianteam.com/seo-services"
+                class="copyright_seo"
+                target="_blank"
+                >سئو و بهینه‌سازی سایت</a
+              >.
+            </div>
+          </footer>
         </div>
-        <footer></footer>
       </div>
     </section>
     <!-- end-footer -->
+
+    <!--mobile_menu_bottom-->
+    <div class="menu-navigation">
+      <div class="grid items-center grid-cols-5">
+        <a
+          href="/onlineshop"
+          class="flex flex-col text-gray-200 items-center gap-2"
+        >
+          <i class="text-xl harmony-icon harmony-icon-bag"></i>
+          <p class="text-xs">فروشگاه</p>
+        </a>
+        <a
+          href="/special-offers"
+          class="flex flex-col text-gray-200 items-center gap-2"
+        >
+          <i class="text-xl harmony-icon harmony-icon-percent"></i>
+          <p class="text-xs">تخفیف ویژه</p>
+        </a>
+
+        <a href="(url)" title="(url)" class="menu_bar_bottom_home">
+          <i class="text-3xl text-black harmony-icon harmony-icon-home"></i>
+        </a>
+        <a href="basket" class="flex flex-col text-gray-200 items-center gap-2">
+          <i class="text-xl harmony-icon harmony-icon-basket"></i>
+          <p class="text-xs relative">
+            <span
+              class="bg-theme-secondary text-black min-w-5 h-5 rounded-full absolute -top-8 inset-s-0 flex justify-center items-center"
+            >
+              (hbasketcounter)
+            </span>
+            سبد خرید
+          </p>
+        </a>
+        <button
+          type="button"
+          class="flex flex-col text-gray-200 items-center gap-2 show-btn"
+          data-modal="social"
+        >
+          <i class="text-xl harmony-icon harmony-icon-phone"></i>
+          <p class="text-xs">ارتباط با ما</p>
+        </button>
+      </div>
+    </div>
+
+    <div class="hmodal menu_social" data-modal="social">
+      <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-5"></div>
+
+      <div class="grid grid-cols-2 gap-2">
+        <a
+          href="tel:(phone)"
+          class="group relative overflow-hidden rounded-2xl bg-white border-x-[3px] shadow-[0px_0px_20px_#0000001a] px-2 py-1 border-x-emerald-400 flex duration-300 gap-2 items-center"
+        >
+          <span
+            class="size-9 rounded-full bg-emerald-100 flex items-center justify-center"
+          >
+            <i
+              class="harmony-icon-phone harmony-icon text-lg text-emerald-600"
+            ></i>
+          </span>
+
+          <span class="text-gray-900 text-sm">تماس با ما</span>
+        </a>
+        <a
+          href="/contact"
+          class="group relative overflow-hidden rounded-2xl bg-white border-x-[3px] shadow-[0px_0px_20px_#0000001a] px-2 py-1 border-x-indigo-400 active:scale-95 flex duration-300 gap-2 items-center"
+        >
+          <div
+            class="size-9 rounded-full bg-indigo-100 flex items-center justify-center"
+          >
+            <i
+              class="harmony-icon-commenting-o harmony-icon text-lg text-indigo-600"
+            ></i>
+          </div>
+
+          <span class="text-gray-900 text-sm">راه‌های ارتباطی</span>
+        </a>
+      </div>
+    </div>
+
+    <!--mobile_menu_bottom-->
 
     <!-- SideRight -->
     <div
@@ -4422,6 +4532,40 @@
       </div>
     </div>
     <!-- story -->
+
+    <div
+      class="fixed top-1/2 inset-e-4 -translate-y-1/2 z-999 hidden md:flex flex-col gap-3 items-end"
+    >
+      <a
+        href="tel:(phone)"
+        class="group flex items-center bg-theme-primary text-white rounded-full border border-theme-primary-100 shadow-lg overflow-hidden duration-300 hover:w-36 size-10 hover:shadow-red-500/30"
+      >
+        <span class="flex items-center justify-center size-10 text-xl shrink-0">
+          <i class="harmony-icon-phone harmony-icon"></i>
+        </span>
+
+        <span
+          class="whitespace-nowrap text-sm opacity-0 group-hover:opacity-100 duration-300"
+        >
+          تماس با ما
+        </span>
+      </a>
+
+      <a
+        href="/contact"
+        class="group flex items-center bg-theme-primary text-white border border-theme-primary-100 rounded-full shadow-lg overflow-hidden duration-300 hover:w-36 size-10 hover:shadow-red-500/30"
+      >
+        <span class="flex items-center justify-center size-10 text-xl shrink-0">
+          <i class="harmony-icon-commenting-o harmony-icon"></i>
+        </span>
+
+        <span
+          class="whitespace-nowrap text-sm opacity-0 group-hover:opacity-100 duration-300"
+        >
+          راه‌های ارتباطی
+        </span>
+      </a>
+    </div>
 
     <!-- start-js -->
     <script src="htemplate/Toranj/Assets/Component/jquery/jquery-4.0.0.min.js"></script>
