@@ -191,4 +191,102 @@ $(document).ready(function () {
       }
     });
   });
+
+    function initializeCountdowns() {
+      if (!$('.et-timer').length) return;
+      $('.et-timer').each(function () {
+        const $timer = $(this);
+        const enddate = $timer.data('enddate');
+        const endDate = new Date(
+          new Date().getTime() + enddate * 24 * 60 * 60 * 1000
+        );
+
+        function updateTimer() {
+          const now = new Date().getTime();
+          const distance = endDate - now;
+
+          if (distance < 0) {
+            clearInterval(interval);
+            $timer.find('.days').text('00');
+            $timer.find('.hours').text('00');
+            $timer.find('.minutes').text('00');
+            $timer.find('.seconds').text('00');
+            return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          $timer.find('.days').text(days.toString().padStart(2, '0'));
+          $timer.find('.hours').text(hours.toString().padStart(2, '0'));
+          $timer.find('.minutes').text(minutes.toString().padStart(2, '0'));
+          $timer.find('.seconds').text(seconds.toString().padStart(2, '0'));
+        }
+
+        updateTimer();
+        const interval = setInterval(updateTimer, 1000);
+      });
+    }
+
+    $(document).ready(initializeCountdowns);
+
+
+     $(function () {
+      if (!$('.stats-counter').length) return;
+       function startCounter($container) {
+         $container.find('.counter').each(function () {
+           let $this = $(this);
+
+           if ($this.hasClass('done')) return;
+
+           $this.addClass('done');
+
+           let target = parseInt($this.data('range'));
+           let $number = $this.find('.progress-number');
+
+           $({ Counter: 0 }).animate(
+             { Counter: target },
+             {
+               duration: 3000,
+               easing: 'swing',
+
+               step: function () {
+                 $number.text('+' + Math.ceil(this.Counter));
+               },
+
+               complete: function () {
+                 $number.text('+' + target);
+               },
+             }
+           );
+         });
+       }
+
+       const observer = new IntersectionObserver(
+         function (entries) {
+           entries.forEach(function (entry) {
+             if (entry.isIntersecting) {
+               startCounter($(entry.target));
+
+               // فقط همین سکشن از لیست observer حذف شود
+               observer.unobserve(entry.target);
+             }
+           });
+         },
+         {
+           threshold: 0.3,
+         }
+       );
+
+       $('.stats-counter').each(function () {
+         observer.observe(this);
+       });
+     });
+
 });
