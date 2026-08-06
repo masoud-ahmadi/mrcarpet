@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="htemplate/Toranj/Assets/Css/App/output.css" />
+    <link
+      rel="stylesheet"
+      href="htemplate/Toranj/Assets/Component/map/leaflet.css"
+    />
   </head>
   <body>
-
     <!-- start-header -->
     <header class="pt-3 space-y-3 z-101 relative bg-white">
       <div class="container">
@@ -1263,392 +1266,426 @@
     </section>
     <!-- end-section-1 -->
 
-    <!--start_section_2-->
-    (about)
-    <section
-      class="bg-[url(../../Images/design/services-bg.png)] bg-no-repeat bg-top min-h-100 overflow-hidden bg-white"
-    >
-      <div class="container space-y-10 pt-14">
-        <div>
-          <div class="relative">
-            <h2 class="text-3xl font-semibold">(title)</h2>
+    <!-- start-section-2 -->
+    <section class="lg:py-10 min-h-dvh">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div class="space-y-5">
+            <div class="border-s-4 py-1 border-theme-primary ps-3">
+              (contact)
+              <h2 class="text-lg font-pinar font-semibold">(title)</h2>
+              (/contact)
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              ما همواره ارزش ویژه‌ای برای ارتباط با مخاطبان و پاسخ‌گویی به
+              نیازهای آن‌ها قائل هستیم. اگر سوالی دارید، به راهنمایی نیاز دارید
+              یا مایل هستید اطلاعات بیشتری درباره محصولات، خدمات یا فعالیت‌های
+              ما کسب کنید، تیم ما آماده است تا در کوتاه‌ترین زمان ممکن پاسخگوی
+              شما باشد. از طریق راه‌های ارتباطی موجود می‌توانید با ما در تماس
+              باشید و از پشتیبانی و مشاوره لازم بهره‌مند شوید.
+            </p>
+
+            <div class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <a
+                href="tel:(phone)"
+                class="bg-gray-100 border-gray-200 flex items-center gap-1 justify-between rounded-full p-1 border flex-wrap hover:border-theme-primary duration-200"
+              >
+                <div class="flex items-center gap-1">
+                  <span
+                    class="size-9 shrink-0 grid place-content-center bg-theme-primary border text-white rounded-3xl rounded-bl-md shadow-[0px_12px_12px_0px_#0000001a] cursor-pointer active:scale-95 duration-200"
+                  >
+                    <i class="harmony-icon-phone-1 harmony-icon text-lg"></i>
+                  </span>
+                  <h3 class="text-xs font-semibold">تلفن ثابت:</h3>
+                </div>
+
+                <h3 class="text-xs font-semibold">(phone)</h3>
+              </a>
+              <a
+                href="tel:(mobile)"
+                class="bg-gray-100 border-gray-200 flex items-center gap-1 hover:border-theme-primary justify-between rounded-full p-1 border flex-wrap duration-200"
+              >
+                <div class="flex items-center gap-1">
+                  <span
+                    class="size-9 grid shrink-0 place-content-center bg-theme-primary text-white border rounded-3xl rounded-bl-md shadow-[0px_12px_12px_0px_#0000001a] cursor-pointer active:scale-95 duration-200"
+                  >
+                    <i class="harmony-icon-mobile-1 harmony-icon text-lg"></i>
+                  </span>
+                  <h3 class="text-xs font-semibold">موبایل:</h3>
+                </div>
+
+                <h3 class="text-xs font-semibold">(mobile)</h3>
+              </a>
+              <a
+                href="tel:(phone)"
+                class="bg-gray-100 border-gray-200 flex items-center gap-1 hover:border-theme-primary justify-between rounded-full p-1 border flex-wrap duration-200"
+              >
+                <div class="flex shrink-0 items-center gap-1">
+                  <span
+                    class="size-9 grid place-content-center bg-theme-primary text-white border rounded-3xl rounded-bl-md shadow-[0px_12px_12px_0px_#0000001a] cursor-pointer active:scale-95 duration-200"
+                  >
+                    <i class="harmony-icon-fax harmony-icon text-lg"></i>
+                  </span>
+                  <h3 class="text-xs font-semibold">فکس:</h3>
+                </div>
+
+                <h3 class="text-xs font-semibold">(phone)</h3>
+              </a>
+              <a
+                href="mailto:(email)"
+                class="bg-gray-100 border-gray-200 flex items-center gap-1 hover:border-theme-primary justify-between rounded-full p-1 border flex-wrap duration-200"
+              >
+                <div class="flex shrink-0 items-center gap-1">
+                  <span
+                    class="size-9 grid place-content-center bg-theme-primary text-white border rounded-3xl rounded-bl-md shadow-[0px_12px_12px_0px_#0000001a] cursor-pointer active:scale-95 duration-200"
+                  >
+                    <i class="harmony-icon-mail-alt harmony-icon text-lg"></i>
+                  </span>
+                  <h3 class="text-xs font-semibold">ایمیل:</h3>
+                </div>
+
+                <h3 class="text-xs font-semibold">(email)</h3>
+              </a>
+
+              <div
+                class="bg-gray-100 border-gray-200 flex items-center gap-1 rounded-full p-1 hover:border-theme-primary border md:col-span-2 duration-200"
+              >
+                <span
+                  class="size-9 grid place-content-center shrink-0 text-center border bg-theme-primary text-white rounded-3xl rounded-bl-md shadow-[0px_12px_12px_0px_#0000001a] duration-200 me-3"
+                >
+                  <i class="harmony-icon-map-signs harmony-icon text-lg"></i>
+                </span>
+                <span class="font-semibold text-xs">آدرس: (address)</span>
+              </div>
+            </div>
+            <a href="tel:(phone)" class="inline-block">
+              <img
+                src="htemplate/Toranj/Assets/Images/design/banner_phone.png"
+                loading="lazy"
+                alt=""
+                title=""
+                class=""
+                width="697"
+                height="140"
+              />
+            </a>
+            <div class="flex justify-between items-center flex-wrap gap-5">
+              <span class="font-semibold">شبکه های اجتماعی :</span>
+              <div class="flex items-center gap-3 flex-wrap">
+                <a href="(whatsapp)" class="inline-flex" target="_blank">
+                  <img
+                    src="htemplate/Toranj/Assets/Images/social/whatsapp.png"
+                    loading="lazy"
+                    alt=""
+                    title=""
+                    class="size-10"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+                <a href="(instagram)" class="inline-flex" target="_blank">
+                  <img
+                    src="htemplate/Toranj/Assets/Images/social/instagram.png"
+                    loading="lazy"
+                    alt=""
+                    title=""
+                    class="size-10"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+
+                <a href="(aparat)" class="inline-flex" target="_blank">
+                  <img
+                    src="htemplate/Toranj/Assets/Images/social/aparat.png"
+                    loading="lazy"
+                    alt=""
+                    title=""
+                    class="size-10"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+                <a href="(telegram)" class="inline-flex" target="_blank">
+                  <img
+                    src="htemplate/Toranj/Assets/Images/social/telegram.png"
+                    loading="lazy"
+                    alt=""
+                    title=""
+                    class="size-10"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+                <a href="(eitaa)" class="inline-flex" target="_blank">
+                  <img
+                    src="htemplate/Toranj/Assets/Images/social/eitaa.png"
+                    loading="lazy"
+                    alt=""
+                    title=""
+                    class="size-10"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center gap-3">
+              <span class="border-e inline-flex pe-3 py-2 border-gray-300">
+                <i
+                  class="harmony-icon-commenting harmony-icon text-2xl text-theme-primary"
+                ></i>
+              </span>
+              <div>
+                <h3 class="font-semibold">ارسال پیام</h3>
+                <p class="text-xs text-gray-400 block">
+                  خوشحال می شویم نظرات، پیشنهادات و انتقادات شما را بشنویم!
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-5">
+              <div class="relative">
+                <input
+                  placeholder="نام و نام خانوادگی"
+                  class="size-full px-2 py-3 rounded-2xl text-sm border bg-gray-50 hfamily border-gray-200 focus:outline-0 focus:border-theme-primary peer ps-10"
+                  type="text"
+                />
+                <span
+                  class="pointer-events-none absolute top-1/2 inset-s-0 grid place-content-center -translate-y-1/2 w-10 items-center justify-center text-slate-400 peer-focus:text-theme-primary"
+                >
+                  <i class="harmony-icon-user harmony-icon text-lg"></i>
+                </span>
+              </div>
+              <div class="relative">
+                <input
+                  placeholder="شماره تماس"
+                  class="size-full px-2 py-3 rounded-2xl text-sm border bg-gray-50 hfamily border-gray-200 focus:outline-0 focus:border-theme-primary peer ps-10 hphone"
+                  type="text"
+                />
+                <span
+                  class="pointer-events-none absolute top-1/2 inset-s-0 grid place-content-center -translate-y-1/2 w-10 items-center justify-center text-slate-400 peer-focus:text-theme-primary"
+                >
+                  <i class="harmony-icon-phone-1 harmony-icon text-lg"></i>
+                </span>
+              </div>
+              <div class="relative sm:col-span-2">
+                <input
+                  placeholder="ایمیل"
+                  class="size-full px-2 py-3 rounded-2xl text-sm border bg-gray-50 hfamily border-gray-200 focus:outline-0 focus:border-theme-primary peer ps-10 hemail"
+                  type="text"
+                />
+                <span
+                  class="pointer-events-none absolute top-1/2 inset-s-0 grid place-content-center -translate-y-1/2 w-10 items-center justify-center text-slate-400 peer-focus:text-theme-primary"
+                >
+                  <i class="harmony-icon-mail-alt harmony-icon text-lg"></i>
+                </span>
+              </div>
+
+              <textarea
+                name=""
+                cols="30"
+                class="p-2 border rounded-2xl bg-gray-50 border-gray-200 focus:outline-0 focus:border-theme-primary htext sm:col-span-2"
+                rows="7"
+                placeholder="توضیحات"
+              ></textarea>
+            </div>
+            <button
+              type="button"
+              class="bg-theme-primary hcommentbtn active:scale-95 duration-200 cursor-pointer group flex items-center w-full justify-center p-2 text-white"
+            >
+              <i class="harmony-icon-send harmony-icon text-2xl"></i>
+
+              ارسال پیام
+            </button>
           </div>
         </div>
-        <div class="editor">(editor)</div>
       </div>
     </section>
-    <!--end_section_2-->
-    (/about)
+    <!-- end-section-2 -->
+    <!-- start-section-3 -->
 
-    <!-- start-section-3-->
-    <section class="bg-theme-primary-100 py-10">
-      <div class="container space-y-10">
-        <!-- Header -->
-        <div class="text-center space-y-5">
+    <section class="py-10 bg-theme-primary-100 space-y-10">
+      <div class="text-center space-y-5">
+        <span
+          class="inline-flex items-center gap-2 bg-theme-primary/20 text-primary text-xs font-bold px-4 py-1 rounded-full"
+        >
+          نمایندگی‌ها
+        </span>
+
+        <h2 class="text-2xl md:text-3xl font-black leading-tight text-gray-900">
+          شعب و
+          <span class="text-theme-primary">نمایندگی‌های آقای فرش</span>
+        </h2>
+
+        <p class="text-gray-500 max-w-2xl mx-auto">
+          دسترسی آسان‌تر شما به محصولات آقای فرش با حضور شعب و نمایندگی‌های ما
+          در سراسر کشور
+        </p>
+      </div>
+      <div class="container grid grid-cols-1 lg:grid-cols-2 gap-y-10">
+        <div class="relative grid lg:grid-cols-2 items-center z-1">
           <span
-            class="inline-flex items-center gap-2 bg-theme-primary/20 text-primary text-xs font-bold px-4 py-1 rounded-full"
-          >
-            افتخارات
-          </span>
+            class="absolute inset-0 lg:inset-7 border border-theme-primary -z-1 bg-white/50"
+          ></span>
+          <div class="p-3 lg:p-10">
+            <h2 class="text-2xl font-semibold text-theme-primary">
+              دفتر مرکزی
+            </h2>
+            <div class="space-y-5">
+              <p class="leading-relaxed">
+                تهران، خیابان شریعتی، بالاتر از پل سیدخندان، خیابان مجتبایی،
+                پلاک ۱۰
+              </p>
+              <a href="tel:(phone)" class="inline-block"> 09103822616 </a>
+            </div>
+          </div>
 
-          <h2 class="text-2xl md:text-5xl font-black leading-tight text-gray-900">
-            دستاوردها و
-            <span class="text-theme-primary">افتخارات آقای فرش</span>
-          </h2>
-
-          <p class="text-gray-500 max-w-2xl mx-auto">
-            بیش از سه دهه افتخار، نوآوری و اعتماد مشتریان
-          </p>
+          <div class="relative p-3 lg:p-0  lg:me-12">
+            <div id="map1" class="h-64 w-full"></div>
+          </div>
         </div>
+        <div class="relative grid items-center lg:grid-cols-2 z-1">
+          <span
+            class="absolute inset-0 lg:inset-7 border border-theme-primary -z-1 bg-white/50"
+          ></span>
 
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/21.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>برند محبوب آقای فرش 1401</h2>
-            </div>
-          </article>
-          <article class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5">
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/20.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>کار آفرین برتر آقای فرش 1401</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/19.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>برند محبوب آقای فرش 1400</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/18.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>کارآفرین برتر آقای فرش 1400</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/1.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>تندیس جشنواره تبلیغات1399</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/2.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>تندیس سیمین صنعت سبز کشور 99</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/3.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>تندیس نانو 98</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/4.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h3>تندیس نانو 96</h3>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/5.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>واحد نمونه استان اصفهان 94</h2>
-            </div>
-          </article>
+          <div class="p-3 lg:p-10">
+            <h2 class="text-2xl font-semibold text-theme-primary">
+              فروشگاه تهران یافت آباد
+            </h2>
 
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/6.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>قهرمان صنعت 94</h2>
+            <div class="space-y-5">
+              <p class="leading-relaxed">
+                اتوبان آیت‌الله سعیدی، بازار مبل یافت‌آباد، پاساژ کاسپین، طبقه ۳
+              </p>
+
+              <a
+                href="tel:02161999"
+                class="inline-block"
+              >
+                021-61999
+              </a>
             </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/7.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>واحد نمونه تحقیق و توسعه 93 فرخ سپهر</h2>
+          </div>
+
+          <div class="relative p-3 lg:p-0  lg:me-12">
+            <div id="map2" class="h-64 w-full"></div>
+          </div>
+        </div>
+        <div class="relative grid items-center lg:grid-cols-2 z-1">
+          <span
+            class="absolute inset-0 lg:inset-7 border border-theme-primary -z-1 bg-white/50"
+          ></span>
+
+          <div class="p-3 lg:p-10">
+            <h2 class="text-2xl font-semibold text-theme-primary">
+              فروشگاه تهران ایران مال
+            </h2>
+
+            <div class="space-y-5">
+              <p class="leading-relaxed">
+                ایران مال (بازار بزرگ ایران)، طبقه (زون) G0، واحد RA-131
+              </p>
+
+              <a
+                href="tel:02161999"
+                class="inline-block"
+              >
+                021-61999
+              </a>
             </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/8.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>تندیس حضور فعال در نمایشگاه فرش ماشینی 1392 تهران</h2>
+          </div>
+
+          <div class="relative p-3 lg:p-0  lg:me-12">
+            <div id="map3" class="h-64 w-full"></div>
+          </div>
+        </div>
+        <div class="relative grid items-center lg:grid-cols-2 z-1">
+         <span
+            class="absolute inset-0 lg:inset-7 border border-theme-primary -z-1 bg-white/50"
+          ></span>
+          <div class="p-3 lg:p-10">
+            <h2 class="text-2xl font-semibold text-theme-primary">
+              فروشگاه فردیس
+            </h2>
+
+            <div class="space-y-5">
+              <p class="leading-relaxed">
+                فردیس (تنها شعبه البرز)، بلوار امام خمینی (بلوار تندرستی)، طبقه
+                فوقانی فروشگاه هایپرمی
+              </p>
+
+              <a
+                href="tel:02636163000"
+                class="inline-block "
+              >
+                026-36163000
+              </a>
             </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/9.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>
-                تندیس واحد نمونه تحقیق و توسعه استان اصفهان در حوزه نساجی - بهمن
-                92
-              </h2>
+          </div>
+
+          <div class="relative p-3 lg:p-0  lg:me-12">
+            <div id="map4" class="h-64 w-full"></div>
+          </div>
+        </div>
+        <div class="relative grid items-center lg:grid-cols-2 z-1">
+          <span
+            class="absolute inset-0 lg:inset-7 border border-theme-primary -z-1 bg-white/50"
+          ></span>
+
+          <div class="p-3 lg:p-10">
+            <h2 class="text-2xl font-semibold text-theme-primary">
+              فروشگاه قزوین
+            </h2>
+
+            <div class="space-y-5">
+              <p class="leading-relaxed">
+                قزوین، بلوار شهید نوروزیان (سلیمانی)، طبقه فوقانی فروشگاه رفاه
+              </p>
+
+              <a
+                href="tel:02833930"
+                class="inline-block "
+              >
+                028-33930
+              </a>
             </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/10.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>تندیس کارآفرین برتر استان اصفهان به کارخانه فرخ سپهر 1392</h2>
+          </div>
+
+          <div class="relative p-3 lg:p-0  lg:me-12">
+            <div id="map5" class="h-64 w-full"></div>
+          </div>
+        </div>
+        <div class="relative grid items-center lg:grid-cols-2 z-1">
+          <span
+            class="absolute inset-0 lg:inset-7 border border-theme-primary -z-1 bg-white/50"
+          ></span>
+
+          <div class="p-3 lg:p-10">
+            <h2 class="text-2xl font-semibold text-theme-primary">
+              فروشگاه شاندیز مشهد
+            </h2>
+
+            <div class="space-y-5">
+              <p class="leading-relaxed">
+                جاده شاندیز، بین ویرانی ۳ و ۵
+              </p>
+
+              <a
+                href="tel:05131739"
+                class="inline-block"
+              >
+                051-31739
+              </a>
             </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/11.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>
-                تندیس حضور در همایش ملی صنعت فرش ماشینی از دانشگاه آزاد اسلامی
-                1392
-              </h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/12.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>پیشکسوت صنعت و معدن 92</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/13.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>
-                تندیس واحد برگزیده در اهتمام به برندسازی 1392 از اتحادیه نساجی و
-                پوشاک
-              </h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/14.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>تندیس مدیر جوان نمونه صنعت نساجی به مهندس علی فرهی 1392</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/15.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>
-                تندیس حضور فعال کارخانه فرش سپهر در نمایشگاه فرش ماشینی 1389
-                سلیمانیه عراق
-              </h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/16.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>تندیس گرامیداشت روز ملی کیفیت به کارخانه فرش سپهر 1388</h2>
-            </div>
-          </article>
-          <article
-            class="group bg-white rounded-3xl shadow-md  overflow-hidden space-y-2 p-5"
-          >
-            <img
-              src="htemplate/Toranj/Assets/Images/Achievement/17.png"
-              loading="lazy"
-              alt=""
-              title=""
-              class="w-full h-80 object-contain group-hover:scale-105 transition duration-500"
-              width="259"
-              height="402"
-            />
-            <div class="text-center text-sm">
-              <h2>تندیس حضور فعال در نمایشگاه فرش ماشینی 1388 تهران</h2>
-            </div>
-          </article>
+          </div>
+
+          <div class="relative p-3 lg:p-0 lg:me-12">
+            <div id="map6" class="h-64 w-full"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -1656,9 +1693,9 @@
 
     <!-- start-footer -->
     <section>
-      <div class=" bg-theme-primary ">
+      <div class="bg-theme-primary">
         <div
-          class="container pt-14 pb-20  md:pb-5 space-y-5 sm:space-y-10 relative"
+          class="container pt-14 pb-20 md:pb-5 space-y-5 sm:space-y-10 relative"
         >
           <a
             href="#"
@@ -2070,13 +2107,84 @@
     <!-- end-support -->
     <!-- start-js -->
     <script src="htemplate/Toranj/Assets/Component/jquery/jquery-4.0.0.min.js"></script>
-    (bootloader)
     <script
       type="module"
       src="htemplate/Toranj/Assets/Component/AllTemplate/allModal.js"
     ></script>
 
-      <script>
+    <script src="htemplate/Toranj/Assets/Component/map/leaflet.js"></script>
+
+    <script>
+      const branches = [
+        {
+          id: 'map1',
+          title: 'دفتر مرکزی',
+          lat: 35.74611807623699,
+          lng: 51.446940795941416,
+          zoom: 15,
+        },
+
+        {
+          id: 'map2',
+          title: 'فروشگاه تهران یافت آباد',
+          lat: 35.662026836600674,
+          lng: 51.346382512232964,
+          zoom: 15,
+        },
+
+        {
+          id: 'map3',
+          title: 'فروشگاه ایران مال',
+          lat: 35.75400360751759,
+          lng: 51.19310121343475,
+          zoom: 15,
+        },
+
+        {
+          id: 'map4',
+          title: 'فروشگاه فردیس',
+          lat: 35.72319618094166,
+          lng: 50.97296180499746,
+          zoom: 15,
+        },
+
+        {
+          id: 'map5',
+          title: 'فروشگاه قزوین',
+          lat: 36.297807642106804,
+          lng: 50.00899633144223,
+          zoom: 15,
+        },
+
+        {
+          id: 'map6',
+          title: 'فروشگاه شاندیز مشهد',
+          lat: 36.39063842288279,
+          lng: 59.405734832292836,
+          zoom: 15,
+        },
+      ];
+
+      function createMap(branch) {
+        const map = L.map(branch.id).setView(
+          [branch.lat, branch.lng],
+          branch.zoom
+        );
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+        }).addTo(map);
+
+        L.marker([branch.lat, branch.lng])
+          .addTo(map)
+          .bindPopup(branch.title)
+          .openPopup();
+      }
+
+      branches.forEach(createMap);
+    </script>
+
+    <script>
       document
         .querySelectorAll('.harmony-menu li')
         .forEach((el) => el.classList.add('harmony-menu-li'));
