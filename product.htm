@@ -1502,7 +1502,7 @@
                     <label
                       for="Installment"
                       title="درحال راه اندازی میباشد"
-                      class="cursor-pointer border border-gray-300 flex bg-white items-center gap-1 p-3 rounded-2xl hover:border-theme-primary has-checked:border-theme-primary select-none text-theme-gray-800 has-checked:bg-theme-primary has-checked:text-white"
+                      class="cursor-pointer border border-gray-300 flex bg-white items-center gap-1 p-3 rounded-2xl hover:border-theme-primary has-checked:border-theme-primary select-none text-gray-800 has-checked:bg-theme-primary has-checked:text-white"
                     >
                       <input
                         id="Installment"
@@ -1538,7 +1538,7 @@
                     <div class="hidden lg:block">
                       <button
                         type="button"
-                        class="flex items-center justify-center gap-2 rounded-sm cursor-pointer active:scale-95 duration-200 text-white bg-red-600 p-2 show-btn w-full hbuy"
+                        class="flex items-center justify-center gap-2 rounded-xl cursor-pointer active:scale-95 duration-200 text-white bg-red-600 p-2 show-btn w-full hbuy"
                         data-modal="dialog"
                         data-hid="(id)"
                         (shopping)
@@ -1598,17 +1598,17 @@
             <button
               type="button"
               aria-label="اسلاید بعدی"
-              class="btn-prev-video bg-theme-primary rounded-lg cursor-pointer active:scale-95 duration-200 text-white text-center size-10"
+              class="btn-prev-video bg-white border border-gray-300 shadow rounded-lg cursor-pointer active:scale-95 duration-200 grid place-content-center size-10"
             >
-              <i class="harmony-icon-right-small harmony-icon text-lg"></i>
+              <i class="harmony-icon-right-small harmony-icon text-2xl"></i>
             </button>
 
             <button
               type="button"
               aria-label="اسلاید قبلی"
-              class="btn-next-video bg-theme-primary rounded-lg cursor-pointer active:scale-95 duration-200 text-white text-center size-10"
+              class="btn-next-video bg-white border border-gray-300 rounded-lg cursor-pointer active:scale-95 duration-200 grid place-content-center size-10"
             >
-              <i class="harmony-icon-left-small harmony-icon text-lg"></i>
+              <i class="harmony-icon-left-small harmony-icon text-2xl"></i>
             </button>
           </div>
         </div>
@@ -1953,11 +1953,11 @@
                     </a>
                     <div class="shrink-0 flex items-center justify-between">
                       <div>
-                        <div (end) class="hidden">
+                        <div (end) class="hdden">
                           <a
                             href="tel:(phone)"
                             type="button"
-                            class="bg-red-500 text-white button duration-200 size-10 grid place-content-center rounded-lg"
+                            class="bg-gray-200 button duration-200 size-9 grid place-content-center rounded-lg"
                           >
                             <i
                               class="harmony-icon harmony-icon-phone text-xl"
@@ -2029,7 +2029,7 @@
                           <a
                             href="tel:(phone)"
                             type="button"
-                            class="bg-red-500 text-white button duration-200 size-10 grid place-content-center rounded-lg"
+                            class="bg-gray-200 button duration-200 size-9 grid place-content-center rounded-lg"
                           >
                             <i
                               class="harmony-icon harmony-icon-phone text-xl"
@@ -2101,7 +2101,7 @@
                           <a
                             href="tel:(phone)"
                             type="button"
-                            class="bg-red-500 text-white button duration-200 size-10 grid place-content-center rounded-lg"
+                            class="bg-gray-200 button duration-200 size-9 grid place-content-center rounded-lg"
                           >
                             <i
                               class="harmony-icon harmony-icon-phone text-xl"
@@ -2173,7 +2173,7 @@
                           <a
                             href="tel:(phone)"
                             type="button"
-                            class="bg-red-500 text-white button duration-200 size-10 grid place-content-center rounded-lg"
+                            class="bg-gray-200 button duration-200 size-9 grid place-content-center rounded-lg"
                           >
                             <i
                               class="harmony-icon harmony-icon-phone text-xl"
@@ -2245,7 +2245,7 @@
                           <a
                             href="tel:(phone)"
                             type="button"
-                            class="bg-red-500 text-white button duration-200 size-10 grid place-content-center rounded-lg"
+                            class="bg-gray-200 button duration-200 size-9 grid place-content-center rounded-lg"
                           >
                             <i
                               class="harmony-icon harmony-icon-phone text-xl"
@@ -2317,7 +2317,7 @@
                           <a
                             href="tel:(phone)"
                             type="button"
-                            class="bg-red-500 text-white button duration-200 size-10 grid place-content-center rounded-lg"
+                            class="bg-gray-200 button duration-200 size-9 grid place-content-center rounded-lg"
                           >
                             <i
                               class="harmony-icon harmony-icon-phone text-xl"
@@ -2365,350 +2365,278 @@
 
     <!-- start-section-5 -->
     (product)
-    <section class="py-10 bg-theme-primary-100 -mt-50 pt-50">
-      <div class="relative max-w-5xl mx-auto space-y-5 px-4 lg:px-0">
+    <section class="container">
+      <div class="grid grid-cols-1 md:grid-cols-16 gap-5 relative">
         <div
-          class="w-full block sticky top-0 inset-x-0 h-10 border-b z-2 border-b-white mt-5 bg-theme-primary-100"
+          class="w-full block sticky top-0 inset-x-0 h-10 border-b z-2 bg-white md:col-span-16 mt-5"
         >
           <ul class="flex w-full overflow-x-auto hide-scrollbar">
             <li
-              class="p-2 cursor-pointer menu-item [&.is-active]:border-b-4 [&.is-active]:text-theme-primary [&.is-active]:border-theme-primary is-active overflow-hidden"
+              class="p-2 cursor-pointer menu-item [&.is-active]:border-b-4 [&.is-active]:text-theme-primary [&.is-active]:border-theme-primary is-active [&.is-active]:rounded-b-sm overflow-hidden"
               data-target="review"
             >
               نقدو بررسی
             </li>
             <li
-              class="p-2 cursor-pointer menu-item [&.is-active]:border-b-4 [&.is-active]:text-theme-primary [&.is-active]:border-theme-primary overflow-hidden"
+              class="p-2 cursor-pointer menu-item [&.is-active]:border-b-4 [&.is-active]:text-theme-primary [&.is-active]:border-theme-primary [&.is-active]:rounded-b-sm overflow-hidden"
               data-target="specs"
             >
               مشخصات محصول
             </li>
 
             <li
-              class="p-2 cursor-pointer menu-item [&.is-active]:border-b-4 [&.is-active]:text-theme-primary [&.is-active]:border-theme-primary overflow-hidden"
+              class="p-2 cursor-pointer menu-item [&.is-active]:border-b-4 [&.is-active]:text-theme-primary [&.is-active]:border-theme-primary [&.is-active]:rounded-b-sm overflow-hidden"
               data-target="comments"
             >
               ثبت دیدگاه
             </li>
           </ul>
         </div>
+        <div class="md:col-span-12 space-y-10 relative">
+          <div class="relative space-y-5">
+            <div
+              class="bg-white introduction-wrapper section scroll-mt-10"
+              id="review"
+            >
+              <div class="introduction space-y-5" data-height="10rem">
+                <div class="flex items-center">
+                  <div class="text-lg font-extrabold text-gray-800">
+                    نقد و بررسی:
+                  </div>
+                </div>
 
-        <div class="relative space-y-10">
-          <div
-            class="bg-white introduction-wrapper section scroll-mt-10 px-3 pt-3 rounded-2xl"
-            id="review"
-          >
-            <div class="introduction space-y-5" data-height="10rem">
-              <div class="flex items-center gap-3">
-                <span
-                  class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-7 h-7 block"
-                ></span>
-                <div>
-                  <h2 class="text-md font-semibold">
-                    نقد و
-                    <span class="text-theme-primary">بررسی</span>
-                  </h2>
-                  <span class="text-xs block text-gray-500"
-                    >Review</span
-                  >
+                <div class="editor p-2">(editor)</div>
+              </div>
+              <div class="text-sm text-sky-500 mt-3">
+                <div class="introduction-span cursor-pointer">
+                  <div class="">بیشتر...</div>
+                </div>
+                <div class="view-less cursor-pointer">
+                  <div class="">کمتر...</div>
                 </div>
               </div>
-              <div class="editor">
-                (editor)
-                <div class="descBox__info">
-                  <p dir="RTL">
-                    <strong>چرا آقای فرش؟</strong>
-                  </p>
-                  <p dir="RTL">
-                    آقای فرش به عنوان یکی از بزرگترین و مدرن ترین هایپرمارکت های
-                    فرش در ایران&nbsp; است که با اتکا به کارخانجات تولیدی خود و
-                    سایر برندهای معتبر و مطرح کشور به ارائه محصولات و خدمات به
-                    عموم مردم می پردازد. این مجموعه علاوه بر
-                    <span style="color: #0000ff"
-                      >فروش غیر حضوری با شماره تماس (02175375) دارای 5 شعبه در
-                      سراسرکشور شامل استان تهران (شهر تهران: یافت آباد ،
-                      ایرانمال ) ،استان خراسان رضوی (شهر&nbsp; شاندیز ) ، استان
-                      البرز ( شهر:فردیس )&nbsp; ، استان قزوین (شهر
-                      قزوین)&nbsp;</span
-                    >میباشد ،این مجموعه در تمامی شعب خود بهترین برند ها و بافته
-                    های ایران و جهان را که شامل انواع
-                    <a
-                      href="https://www.iranmrcarpet.com/fa/product-cat/machine-carpet"
-                      ><span style="color: #0000ff">فرش ماشینی</span></a
-                    ><span style="color: #000000">،</span>
-                    <strong
-                      ><a
-                        href="https://www.iranmrcarpet.com/fa/product-cat/machine-carpet/machine-modern-carpet"
-                        ><span style="color: #0000ff">فرش مدرن</span></a
-                      ></strong
-                    ><span style="color: #0000ff"> و </span
-                    ><strong
-                      ><a
-                        href="https://www.iranmrcarpet.com/fa/product-cat/machine-carpet/machine-classic-carpet"
-                        ><span style="color: #0000ff">فرش کلاسیک</span></a
-                      ></strong
-                    ><span style="color: #0000ff">، </span
-                    ><strong
-                      ><a
-                        href="https://www.iranmrcarpet.com/fa/product-cat/machine-carpet/kids"
-                        ><span style="color: #0000ff">فرش کودک</span></a
-                      ></strong
-                    ><span style="color: #0000ff">،</span
-                    ><strong
-                      ><span style="color: #0000ff"> </span
-                      ><a
-                        href="https://www.iranmrcarpet.com/fa/product-cat/handmade-carpet"
-                        ><span style="color: #0000ff">فرش دستبافت</span></a
-                      ></strong
-                    ><span style="color: #0000ff"> و </span
-                    ><strong
-                      ><a
-                        href="https://www.iranmrcarpet.com/fa/product-cat/pictorial-carpet"
-                        ><span style="color: #0000ff"
-                          >تابلو فرش دستبافت</span
-                        ></a
-                      ><span style="color: #0000ff"> </span></strong
-                    >گرد هم آورده است.
-                  </p>
-                  <p dir="RTL">
-                    مجموعه آقای فرش با هدف ارائه محصولات باکیفیت، متنوع و با حذف
-                    واسطه ها آغاز به فعالیت نمود. این مجموعه بر پایه سالها دانش
-                    و تجربه برترین تولید کنندگان ایران بنا شده است، تولید
-                    کنندگانی که محصولاتی بی رقیب و با کیفیت را نه تنها در
-                    بازارهای ایران بلکه به بازارهای سایر کشورهای جهان نیز صادر
-                    کرده اند به همین سبب بخش زیادی از محصولات ارائه شده در این
-                    مجموعه تنها به صورت انحصاری در شعب آقای فرش عرضه می گردند.
-                  </p>
-                  <p dir="RTL">&nbsp;</p>
-                  <p dir="RTL">
-                    <strong>اهداف آقای فرش</strong>
-                  </p>
-                  <p dir="RTL">
-                    آقای فرش در نظر دارد تا با گسترش شعب خود در سراسر کشور،
-                    زمینه ساز افزایش دسترسی عموم مردم به محصولات با کیفیت، با
-                    قیمت واقعی به همراه خدمات ویژه گردد. از این رو همواره
-                    استانداردهای ویژه ای را جهت جذب کارکنان، احداث و تجهیز شعب و
-                    محصولات و برندهای ارائه شده در نظر می گیرد. همچنین برای حصول
-                    این هدف عالی، آقای فرش با عقد قرارداد با ارگان ها و سازمان
-                    های مختلف، فروش اقساطی در بازه های کوتاه و بلند مدت برای همه
-                    اقشار جامعه با هرسطح درآمدی فراهم کرده است. این تنوع در
-                    شرایط فروش اقساطی به همراه جشنواره های فروش تخفیف دار در
-                    بازه های زمانی مختلف به مخاطبین ارائه می گردد. شایان ذکر است
-                    این مجموعه علاوه بر فروشگاه های خود سیستم های فروش غیر حضوری
-                    به صورت مجازی از طریق وبسایت و شبکه های اجتماعی و به صورت
-                    تلفنی با مشاوره دقیق و تخصصی در حوزه دکوراسیون منزل نیز
-                    ارائه خدمات می کند.
-                  </p>
-                  <p dir="RTL">
-                    <strong>مزیت های آقای فرش</strong>
-                  </p>
-                  <ul>
-                    <li dir="RTL">خدمات پس از فروش</li>
-                    <li dir="RTL">تضمین قیمت و کیفیت</li>
-                    <li dir="RTL">ارسال رایگان به سراسر کشور</li>
-                    <li dir="RTL">ارائه وارانتی و گارانتی طلایی</li>
-                    <li dir="RTL">دارنده بزرگترین باشگاه مشتریان</li>
-                    <li dir="RTL">طرح های متنوع خرید اقساطی و نقدی</li>
-                    <li dir="RTL">حذف واسطه ها و پایین ترین قیمت بازار</li>
-                    <li dir="RTL">خرید اقساطی بدون پیش پرداخت و بدون ضامن</li>
-                    <li dir="RTL">
-                      ارائه مشاوره تخصصی در حوزه ی دکوراسیون منزل
+            </div>
+            <div
+              class="bg-white introduction-wrapper section scroll-mt-10"
+              id="specs"
+            >
+              <div class="introduction space-y-3" data-height="10rem">
+                <div class="flex items-center">
+                  <div class="text-lg font-extrabold text-gray-800">
+                    مشخصات محصول:
+                  </div>
+                </div>
+
+                <div class="space-y-3">
+                  (property)
+                  <ul class="flex items-start">
+                    <li
+                      class="text-xs bg-gray-100 w-36  wrap-anywhere shrink-0 p-2"
+                    >
+                      <p>(name)شنت بنمس بسمب اسب ابن</p>
                     </li>
-                    <li dir="RTL">
-                      طرف قرارداد با بسیاری از ارگان ها، ادارات و بانک های کشور
-                    </li>
-                    <li dir="RTL">
-                      ارائه خدمات جانمایی فرش در دکوراسیون قبل از خرید مشتریان
+                    <li class="text-xs p-2 border-b flex-1">
+                      <p>(value)شس ماشسبتاشیشتای شی تاشی شتای شین تشنا</p>
                     </li>
                   </ul>
-                  <p>&nbsp;</p>
+                  (/property)
                 </div>
               </div>
-            </div>
-            <div
-              class="flex items-center justify-center py-2 border-t mt-3 border-gray-200"
-            >
-              <div class="text-center rounded-lg overflow-hidden">
+              <div class="text-xs text-sky-500 mt-3">
                 <div class="introduction-span cursor-pointer">
-                  <div class="text-sm">توضیحات بیشتر</div>
+                  <div class="">بیشتر...</div>
                 </div>
                 <div class="view-less cursor-pointer">
-                  <div class="text-sm">بستن</div>
+                  <div class="">کمتر...</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="bg-white introduction-wrapper section scroll-mt-10 px-3 pt-3 rounded-2xl"
-            id="specs"
-          >
-            <div class="introduction space-y-3" data-height="15rem">
-              <div class="flex items-center gap-3">
-                <span
-                  class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-7 h-7 block"
-                ></span>
-                <div>
-                  <h2 class="text-md font-semibold">
-                    مشخصات
-                    <span class="text-theme-primary">محصول</span>
-                  </h2>
-                  <span class="text-xs block text-gray-500"
-                    >Product Specifications</span
+            <div (hasfaq)>
+              <div class="h_faq">
+                <ul class="accordion-menu space-y-3">
+                  <li
+                    class="faq_content [&.open_.dropdownlink]:bg-neutral-100 [&.open_.submenuItems]:bg-neutral-50 [&.open_.questiontitle]:text-xl space-y-2"
                   >
-                </div>
-              </div>
+                    <div
+                      class="dropdownlink flex items-center cursor-pointer gap-3 border relative px-3 py-2 rounded-xl"
+                    >
+                      <span
+                        class="number_faq rounded-e-full block shrink-0 text-lg"
+                      ></span>
+                      <h2
+                        class="leading-relaxed flex-1 questiontitle duration-300"
+                      >
+                        (question)
+                      </h2>
+                      <span class="shrink-0">
+                        <i class="harmony-icon-plus harmony-icon"></i>
+                      </span>
+                    </div>
 
-              <div class="space-y-3">
-                (property)
-                <ul class="flex gap-3 items-start">
-                  <li
-                    class="text-xs p-2 bg-gray-100 min-w-36 max-w-46 wrap-anywhere shrink-0"
-                  >
-                    <p>(name) 5454545</p>
-                  </li>
-                  <li class="text-xs bg-gray-50 p-2 flex-1">
-                    <p>(value)454545454</p>
+                    <div class="submenuItems p-3 rounded-xl border">
+                      <p class="text-sm leading-relaxed text-justify">
+                        (answer)
+                      </p>
+                    </div>
                   </li>
                 </ul>
-                <ul class="flex gap-3 items-start">
-                  <li
-                    class="text-xs p-2 bg-gray-100 min-w-36 max-w-46 wrap-anywhere shrink-0"
-                  >
-                    <p>(name) 5454545</p>
-                  </li>
-                  <li class="text-xs bg-gray-50 p-2 flex-1">
-                    <p>(value)454545454</p>
-                  </li>
-                </ul>
-                <ul class="flex gap-3 items-start">
-                  <li
-                    class="text-xs p-2 bg-gray-100 min-w-36 max-w-46 wrap-anywhere shrink-0"
-                  >
-                    <p>(name) 5454545</p>
-                  </li>
-                  <li class="text-xs bg-gray-50 p-2 flex-1">
-                    <p>(value)454545454</p>
-                  </li>
-                </ul>
-                (/property)
               </div>
             </div>
             <div
-              class="flex items-center justify-center py-2 border-t mt-3 border-gray-200"
+              class="introduction-wrapper section scroll-mt-10"
+              id="comments"
             >
-              <div class="text-center rounded-lg overflow-hidden">
-                <div class="introduction-span cursor-pointer">
-                  <div class="text-sm">توضیحات بیشتر</div>
+              <div class="space-y-3">
+                <div class="flex items-center">
+                  <div class="text-lg font-extrabold text-gray-800">
+                    <spa>ثبت</spa>
+                    <span class="text-theme-primary">دیدگاه:</span>
+                  </div>
                 </div>
-                <div class="view-less cursor-pointer">
-                  <div class="text-sm">بستن</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div (hasfaq)>
-            <div class="h_faq">
-              <ul class="accordion-menu space-y-3">
-                <li
-                  class="faq_content [&.open_.dropdownlink]:bg-theme-primary [&.open_.dropdownlink]:text-white [&.open_.submenuItems]:bg-white [&.open_.questiontitle]:text-xl space-y-2"
-                >
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div
-                    class="dropdownlink flex items-center cursor-pointer gap-3 border relative px-3 py-2 border-gray-300 rounded-2xl bg-white"
+                    class="bg-theme-primary-100 flex items-stretch gap-1 w-full rounded-full p-1 border border-transparent hover:border-theme-primary duration-200"
                   >
                     <span
-                      class="number_faq rounded-e-full block shrink-0 text-lg"
-                    ></span>
-                    <h2
-                      class="leading-relaxed flex-1 questiontitle duration-300"
+                      class="size-10 grid place-content-center bg-white rounded-3xl rounded-bl-md shadow cursor-pointer active:scale-95 duration-200"
                     >
-                      (question)
-                    </h2>
-                    <span class="shrink-0">
-                      <i class="harmony-icon-plus harmony-icon"></i>
+                      <i class="harmony-icon-user harmony-icon"></i>
                     </span>
+                    <input
+                      type="text"
+                      class="w-full outline-none focus:outline-none hfamily"
+                      placeholder="نام ونام خانوادگی"
+                    />
+                  </div>
+                  <div
+                    class="bg-theme-primary-100 flex items-stretch gap-1 w-full rounded-full p-1 border border-transparent hover:border-theme-primary duration-200"
+                  >
+                    <span
+                      class="size-10 grid place-content-center bg-white rounded-3xl rounded-bl-md shadow cursor-pointer active:scale-95 duration-200"
+                    >
+                      <i class="harmony-icon-phone harmony-icon"></i>
+                    </span>
+                    <input
+                      type="text"
+                      class="w-full outline-none focus:outline-none hphone"
+                      placeholder="شماره تماس"
+                    />
                   </div>
 
-                  <div class="submenuItems p-3 rounded-xl border">
-                    <p class="text-sm leading-relaxed text-justify">(answer)</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="bg-white introduction-wrapper section scroll-mt-10 p-3 rounded-2xl"
-            id="comments"
-          >
-            <div class="space-y-3">
-               <div class="flex items-center gap-3">
-                <span
-                  class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-7 h-7 block"
-                ></span>
-                <div>
-                  <h2 class="text-md font-semibold">
-                    ثبت 
-                    <span class="text-theme-primary">دیدگاه</span>
-                  </h2>
-                  <span class="text-xs block text-gray-500"
-                    >Submit a comment</span
+                  <textarea
+                    class="bg-theme-primary-100 sm:col-span-2 p-3 focus:outline-none outline-none rounded-3xl w-full border border-transparent hover:border-theme-primary duration-200 htext"
+                    cols="30"
+                    rows="5"
+                    placeholder="شرح پیام"
+                  ></textarea>
+                  <div
+                    class="p-2 sm:col-span-2 flex justify-end items-center bg-white"
                   >
+                    <button
+                      type="button"
+                      class="bg-theme-primary hcommentbtn active:scale-95 duration-200 cursor-pointer group flex items-center max-w-32 rounded-xl w-full justify-center p-2 text-white"
+                    >
+                      <i class="harmony-icon-send harmony-icon text-2xl"></i>
+
+                      ارسال پیام
+                    </button>
+                  </div>
                 </div>
               </div>
-
-               <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-5">
-              <div class="relative">
-                <input
-                  placeholder="نام و نام خانوادگی"
-                  class="size-full px-2 py-3 rounded-xl text-sm border bg-gray-100 hfamily border-gray-200 focus:outline-0 focus:border-theme-primary peer ps-10"
-                  type="text"
-                />
-                <span
-                  class="pointer-events-none absolute top-1/2 inset-s-0 grid place-content-center -translate-y-1/2 w-10 items-center justify-center text-slate-400 peer-focus:text-theme-primary"
-                >
-                  <i class="harmony-icon-user harmony-icon text-lg"></i>
-                </span>
-              </div>
-              <div class="relative">
-                <input
-                  placeholder="شماره تماس"
-                  class="size-full px-2 py-3 rounded-xl text-sm border bg-gray-50 hfamily border-gray-200 focus:outline-0 focus:border-theme-primary peer ps-10 hphone"
-                  type="text"
-                />
-                <span
-                  class="pointer-events-none absolute top-1/2 inset-s-0 grid place-content-center -translate-y-1/2 w-10 items-center justify-center text-slate-400 peer-focus:text-theme-primary"
-                >
-                  <i class="harmony-icon-phone-1 harmony-icon text-lg"></i>
-                </span>
-              </div>
-              <div class="relative sm:col-span-2">
-                <input
-                  placeholder="ایمیل"
-                  class="size-full px-2 py-3 rounded-xl text-sm border bg-gray-50 hfamily border-gray-200 focus:outline-0 focus:border-theme-primary peer ps-10 hemail"
-                  type="text"
-                />
-                <span
-                  class="pointer-events-none absolute top-1/2 inset-s-0 grid place-content-center -translate-y-1/2 w-10 items-center justify-center text-slate-400 peer-focus:text-theme-primary"
-                >
-                  <i class="harmony-icon-mail-alt harmony-icon text-lg"></i>
-                </span>
-              </div>
-
-              <textarea
-                name=""
-                cols="30"
-                class="p-2 border rounded-2xl bg-gray-100 border-gray-200 focus:outline-0 focus:border-theme-primary htext sm:col-span-2"
-                rows="7"
-                placeholder="توضیحات"
-              ></textarea>
             </div>
-            <button
-              type="button"
-              class="bg-theme-primary hcommentbtn active:scale-95 duration-200 cursor-pointer group flex items-center w-full justify-center p-2 text-white max-w-32 ms-auto rounded-lg"
-            >
-              <i class="harmony-icon-send harmony-icon text-2xl"></i>
+          </div>
+        </div>
+        <div class="col-span-4 hidden md:block">
+          <div
+            class="space-y-5 sticky top-12 bg-theme-primary-100 border border-gray-300 rounded-2xl p-4"
+          >
+            <div class="space-y-2">
+              <label
+                for="Price2"
+                class="cursor-pointer border border-gray-300 bg-white flex items-center gap-1 p-3 rounded-2xl hover:border-theme-primary has-checked:border-theme-primary has-checked:bg-theme-primary has-checked:text-white select-none"
+              >
+                <input
+                  id="Price2"
+                  class="peer bg-ind size-5"
+                  type="radio"
+                  name="Price"
+                  checked
+                />
+                <span class="text-sm">نقدی</span>
+                <div class="flex flex-col items-end flex-1">
+                  <p class="text-sm">(price)</p>
+                </div>
+              </label>
+              <label
+                for="Installment"
+                title="درحال راه اندازی میباشد"
+                class="cursor-pointer border border-gray-300 flex bg-white items-center gap-1 p-3 rounded-2xl hover:border-theme-primary has-checked:border-theme-primary select-none text-gray-800 has-checked:bg-theme-primary has-checked:text-white"
+              >
+                <input
+                  id="Installment"
+                  class="peer bg-ind size-5"
+                  type="radio"
+                  name="Price"
+                  disabled
+                />
+                <span class="text-sm">قسطی</span>
+                <div class="flex flex-col items-end flex-1">
+                  <p class="text-sm">به زودی</p>
+                </div>
+              </label>
+            </div>
+            <div class="space-y-5 mt-5">
+              <div class="flex flex-col items-end gap-2">
+                <div class="flex gap-1 items-center" (hasdiscount)>
+                  <small class="text-slate-700 line-through text-xs">
+                    100.000.000 تومان
+                  </small>
+                  <span
+                    class="rounded-2xl text-[12px] rounded-ee-none text-xs px-2 py-0.5 text-center bg-red-500 text-white z-1"
+                    >50%
+                  </span>
+                </div>
 
-              ارسال پیام
-            </button>
+                <span class="font-black text-slate-700 text-sm"
+                  >100.000.000 تومان</span
+                >
+              </div>
+
+              <div class="hidden lg:block">
+                <button
+                  type="button"
+                  class="flex items-center justify-center gap-2 rounded-xl cursor-pointer active:scale-95 duration-200 text-white bg-red-600 p-2 show-btn w-full hbuy"
+                  data-modal="dialog"
+                  data-hid="(id)"
+                  (shopping)
+                >
+                  <i class="harmony-icon harmony-icon-basket text-lg"></i>
+                  افزودن به سبد
+                </button>
+                <div (end) class="hidden">
+                  <a
+                    href="tel:(phone)"
+                    type="button"
+                    class="flex items-center justify-center gap-2 rounded-sm cursor-pointer active:scale-95 duration-200 text-gray-600 bg-gray-400 p-2"
+                  >
+                    <i
+                      class="harmony-icon harmony-icon-phone animate_shake text-xl"
+                    ></i>
+                    تماس با ما
+                  </a>
+                </div>
+              </div>
+              <a
+                href="tel:(phone)"
+                class="flex items-center justify-center gap-2 rounded-lg text-blue-500 hover:text-blue-600 text-md"
+                type="button"
+              >
+                <i
+                  class="harmony-icon-phone harmony-icon animate_shake text-xl"
+                ></i>
+                <span>تماس جهت خرید قسطی</span>
+              </a>
             </div>
           </div>
         </div>
@@ -2718,48 +2646,42 @@
     <!--end-section-5 -->
 
     <!-- start-section-3 -->
-    <section class="py-5 scroll-m-0 theme-primary-100" id="comment" (hascomment)>
+    <section class="py-5 scroll-m-0" id="comment" (hascomment)>
       <div class="space-y-5 py-5 container">
         <div class="flex justify-between items-center">
-          <div class="flex items-center gap-3">
-                <span class="bg-[radial-gradient(var(--color-gray-400)_1px,transparent_2px)] bg-size-[11px_11px] w-7 h-7 block"></span>
-                <div>
-                  <h2 class="text-md font-semibold">
-                    نظرات  
-                    <span class="text-theme-primary">کاربران</span>
-                  </h2>
-                  <span class="text-xs block text-gray-500">User Reviews</span>
-                </div>
-              </div>
+          <div class="text-lg md:text-2xl font-extrabold">
+            <span class="text-theme-secondary">نظرات</span>
+            <span>کاربران</span>
+          </div>
 
           <div class="flex gap-2 items-center justify-center">
             <button
               type="button"
-              class="btn-prev comment size-10 border grid place-content-center button rounded-xl cursor-pointer bg-white"
+              class="btn-prev-comment bg-white border border-gray-300 shadow rounded-lg cursor-pointer active:scale-95 duration-200 grid place-content-center size-10"
             >
-              <i class="harmony-icon-right-open harmony-icon"></i>
+              <i class="harmony-icon-right-small harmony-icon text-2xl"></i>
             </button>
 
             <button
               type="button"
-              class="btn-next comment size-10 border grid place-content-center button rounded-xl cursor-pointer bg-white"
+              class="btn-next-comment bg-white border border-gray-300 shadow rounded-lg cursor-pointer active:scale-95 duration-200 grid place-content-center size-10"
             >
-              <i class="harmony-icon-left-open harmony-icon"></i>
+              <i class="harmony-icon-left-small harmony-icon text-2xl"></i>
             </button>
           </div>
         </div>
 
         <div class="comment_slider swiper">
           <div class="swiper-wrapper">
-            (comments count="50")
+            <!-- (comments count="50") -->
             <div class="swiper-slide w-auto!">
               <div
-                class="rounded-2xl min-h-60 w-78 md:w-98 flex flex-col justify-between overflow-hidden bg-white border p-4 hover:border-theme-primary duration-200"
+                class="rounded-2xl min-h-60 w-78 md:w-98 flex flex-col justify-between overflow-hidden bg-theme-primary-100 border p-4 hover:border-theme-primary duration-200"
               >
                 <div class="space-y-2">
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full overflow-hidden bg-gray-100 shrink-0"
+                      class="size-10 rounded-full overflow-hidden bg-white shrink-0"
                     >
                       <img
                         src="htemplate/Toranj/Assets/Images/User/user_comment.png"
@@ -2769,14 +2691,12 @@
                     </div>
 
                     <div class="flex flex-col">
-                      <span class="text-xs font-semibold text-theme-gray-800">
+                      <span class="text-xs font-semibold text-gray-800">
                         (family)
                       </span>
                     </div>
                   </div>
-                  <p
-                    class="text-xs text-theme-gray-800 leading-relaxed line-clamp-4"
-                  >
+                  <p class="text-xs text-gray-800 leading-relaxed line-clamp-4">
                     (comment)
                   </p>
                 </div>
@@ -2810,17 +2730,322 @@
                       ></i>
                     </div>
 
-                    <span class="text-xs">(fadate)</span>
+                    <span class="text-xs">(date)</span>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="swiper-slide w-auto!">
+              <div
+                class="rounded-2xl min-h-60 w-78 md:w-98 flex flex-col justify-between overflow-hidden bg-theme-primary-100 border p-4 hover:border-theme-primary duration-200"
+              >
+                <div class="space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="size-10 rounded-full overflow-hidden bg-white shrink-0"
+                    >
+                      <img
+                        src="htemplate/Toranj/Assets/Images/User/user_comment.png"
+                        alt="user"
+                        class="size-full object-cover"
+                      />
+                    </div>
 
-            (/comments)
+                    <div class="flex flex-col">
+                      <span class="text-xs font-semibold text-gray-800">
+                        (family)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="text-xs text-gray-800 leading-relaxed line-clamp-4">
+                    (comment)
+                  </p>
+                </div>
+
+                <div class="space-y-2">
+                  <div
+                    class="mr-3 border-r-2 border-theme-primary pr-3 space-y-1"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold text-theme-primary">
+                        پاسخ مدیر فروشگاه
+                      </span>
+                    </div>
+
+                    <p
+                      class="text-xs text-theme-gray-600 leading-relaxed line-clamp-2"
+                    >
+                      (replay)
+                    </p>
+                  </div>
+
+                  <!-- امتیاز و تاریخ -->
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-0.5 text-theme-primary">
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i
+                        class="harmony-icon harmony-icon-star-outline text-sm"
+                      ></i>
+                    </div>
+
+                    <span class="text-xs">(date)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide w-auto!">
+              <div
+                class="rounded-2xl min-h-60 w-78 md:w-98 flex flex-col justify-between overflow-hidden bg-theme-primary-100 border p-4 hover:border-theme-primary duration-200"
+              >
+                <div class="space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="size-10 rounded-full overflow-hidden bg-white shrink-0"
+                    >
+                      <img
+                        src="htemplate/Toranj/Assets/Images/User/user_comment.png"
+                        alt="user"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <div class="flex flex-col">
+                      <span class="text-xs font-semibold text-gray-800">
+                        (family)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="text-xs text-gray-800 leading-relaxed line-clamp-4">
+                    (comment)
+                  </p>
+                </div>
+
+                <div class="space-y-2">
+                  <div
+                    class="mr-3 border-r-2 border-theme-primary pr-3 space-y-1"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold text-theme-primary">
+                        پاسخ مدیر فروشگاه
+                      </span>
+                    </div>
+
+                    <p
+                      class="text-xs text-theme-gray-600 leading-relaxed line-clamp-2"
+                    >
+                      (replay)
+                    </p>
+                  </div>
+
+                  <!-- امتیاز و تاریخ -->
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-0.5 text-theme-primary">
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i
+                        class="harmony-icon harmony-icon-star-outline text-sm"
+                      ></i>
+                    </div>
+
+                    <span class="text-xs">(date)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide w-auto!">
+              <div
+                class="rounded-2xl min-h-60 w-78 md:w-98 flex flex-col justify-between overflow-hidden bg-theme-primary-100 border p-4 hover:border-theme-primary duration-200"
+              >
+                <div class="space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="size-10 rounded-full overflow-hidden bg-white shrink-0"
+                    >
+                      <img
+                        src="htemplate/Toranj/Assets/Images/User/user_comment.png"
+                        alt="user"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <div class="flex flex-col">
+                      <span class="text-xs font-semibold text-gray-800">
+                        (family)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="text-xs text-gray-800 leading-relaxed line-clamp-4">
+                    (comment)
+                  </p>
+                </div>
+
+                <div class="space-y-2">
+                  <div
+                    class="mr-3 border-r-2 border-theme-primary pr-3 space-y-1"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold text-theme-primary">
+                        پاسخ مدیر فروشگاه
+                      </span>
+                    </div>
+
+                    <p
+                      class="text-xs text-theme-gray-600 leading-relaxed line-clamp-2"
+                    >
+                      (replay)
+                    </p>
+                  </div>
+
+                  <!-- امتیاز و تاریخ -->
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-0.5 text-theme-primary">
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i
+                        class="harmony-icon harmony-icon-star-outline text-sm"
+                      ></i>
+                    </div>
+
+                    <span class="text-xs">(date)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide w-auto!">
+              <div
+                class="rounded-2xl min-h-60 w-78 md:w-98 flex flex-col justify-between overflow-hidden bg-theme-primary-100 border p-4 hover:border-theme-primary duration-200"
+              >
+                <div class="space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="size-10 rounded-full overflow-hidden bg-white shrink-0"
+                    >
+                      <img
+                        src="htemplate/Toranj/Assets/Images/User/user_comment.png"
+                        alt="user"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <div class="flex flex-col">
+                      <span class="text-xs font-semibold text-gray-800">
+                        (family)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="text-xs text-gray-800 leading-relaxed line-clamp-4">
+                    (comment)
+                  </p>
+                </div>
+
+                <div class="space-y-2">
+                  <div
+                    class="mr-3 border-r-2 border-theme-primary pr-3 space-y-1"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold text-theme-primary">
+                        پاسخ مدیر فروشگاه
+                      </span>
+                    </div>
+
+                    <p
+                      class="text-xs text-theme-gray-600 leading-relaxed line-clamp-2"
+                    >
+                      (replay)
+                    </p>
+                  </div>
+
+                  <!-- امتیاز و تاریخ -->
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-0.5 text-theme-primary">
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i
+                        class="harmony-icon harmony-icon-star-outline text-sm"
+                      ></i>
+                    </div>
+
+                    <span class="text-xs">(date)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide w-auto!">
+              <div
+                class="rounded-2xl min-h-60 w-78 md:w-98 flex flex-col justify-between overflow-hidden bg-theme-primary-100 border p-4 hover:border-theme-primary duration-200"
+              >
+                <div class="space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="size-10 rounded-full overflow-hidden bg-white shrink-0"
+                    >
+                      <img
+                        src="htemplate/Toranj/Assets/Images/User/user_comment.png"
+                        alt="user"
+                        class="size-full object-cover"
+                      />
+                    </div>
+
+                    <div class="flex flex-col">
+                      <span class="text-xs font-semibold text-gray-800">
+                        (family)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="text-xs text-gray-800 leading-relaxed line-clamp-4">
+                    (comment)
+                  </p>
+                </div>
+
+                <div class="space-y-2">
+                  <div
+                    class="mr-3 border-r-2 border-theme-primary pr-3 space-y-1"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold text-theme-primary">
+                        پاسخ مدیر فروشگاه
+                      </span>
+                    </div>
+
+                    <p
+                      class="text-xs text-theme-gray-600 leading-relaxed line-clamp-2"
+                    >
+                      (replay)
+                    </p>
+                  </div>
+
+                  <!-- امتیاز و تاریخ -->
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-0.5 text-theme-primary">
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i class="harmony-icon harmony-icon-star text-sm"></i>
+                      <i
+                        class="harmony-icon harmony-icon-star-outline text-sm"
+                      ></i>
+                    </div>
+
+                    <span class="text-xs">(date)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- (/comments) -->
           </div>
         </div>
       </div>
     </section>
+    <!-- end-section-3 -->
     <!-- end-section-3 -->
 
     <!-- start-footer -->
@@ -2831,7 +3056,7 @@
         >
           <a
             href="#"
-            class="absolute inset-s-1/2 translate-x-1/2 top-0 rounded-2xl grid place-content-center h-8 w-6 bg-white focus:outline-0 hover:bg-theme-secondary duration-200"
+            class="absolute inset-s-1/2 translate-x-1/2 top-0 rounded-2xl grid place-content-center h-8 w-6 bg-white focus:outline-none hover:bg-theme-secondary duration-200"
           >
             <i
               class="harmony-icon-left-small harmony-icon text-xl rotate-90"
@@ -3073,36 +3298,42 @@
       class="fixed bottom-0 inset-e-0 w-screen bg-white z-3 border-t border-t-neutral-300 py-2 lg:hidden"
     >
       <div class="w-full grid grid-cols-2 gap-3 px-3">
-        <button
-          type="button"
-          class="flex items-center justify-center w-full bg-[#e20074] rounded-md text-white text-sm h-10 button show-btn hbuy"
-          data-modal="dialog"
-          data-hid="(id)"
-          (shopping)
-        >
-          افزودن به سبد خرید
-        </button>
+        <div (shopping)>
+          <button
+            type="button"
+            class="flex items-center justify-center w-full bg-[#e20074] rounded-xl text-white text-sm h-10 button show-btn hbuy"
+            data-modal="dialog"
+            data-hid="(id)"
+          >
+            افزودن به سبد خرید
+          </button>
+        </div>
+
         <div (end) class="hidden">
           <a
             href="tel:(phone)"
             type="button"
-            class="bg-red-500 text-white button duration-200 w-full rounded-md"
+            class="flex items-center justify-center gap-2 rounded-xl cursor-pointer active:scale-95 duration-200 bg-gray-200 p-2"
           >
             <i class="harmony-icon harmony-icon-phone"></i>
             تماس با ما
           </a>
         </div>
 
-        <div class="flex flex-col items-end justify-center gap-1">
+        <div class="flex flex-col items-end gap-2">
           <div class="flex gap-1 items-center" (hasdiscount)>
-            <small class="text-gray-400 line-through text-xs">
-              (firstprice)
+            <small class="text-slate-700 line-through text-xs">
+              100.000.000 تومان
             </small>
-            <small class="bg-red-500 text-white py-0.5 px-2 rounded-md text-xs">
-              %(discount)
-            </small>
+            <span
+              class="rounded-2xl text-[12px] rounded-ee-none text-xs px-2 py-0.5 text-center bg-red-500 text-white z-1"
+              >50%
+            </span>
           </div>
-          <span class="font-semibold text-slate-700 text-lg">(price)</span>
+
+          <span class="font-black text-slate-700 text-sm"
+            >100.000.000 تومان</span
+          >
         </div>
       </div>
     </div>
@@ -3164,7 +3395,7 @@
 
     <!-- dialog -->
     <div
-      class="bg-white shadow-xl space-y-5 border text-center border-gray-300 hmodal p-2 rounded-2xl max-w-sm w-full"
+      class="bg-white shadow-xl space-y-5 border text-center border-gray-300 hmodal p-2 rounded-2xl max-w-sm w-11/12"
       id="dialog"
       data-modal="dialog"
     >
@@ -3182,13 +3413,13 @@
       <div class="grid grid-cols-2 gap-3">
         <button
           type="button"
-          class="button text-sm btnClose border bg-theme-primary-100 p-2 rounded-lg"
+          class="button text-sm btnClose border bg-gray-600 p-2 rounded-xl cursor-pointer text-white"
         >
           ادامه خرید
         </button>
         <a
           href="basket"
-          class="button border  p-2 bg-white rounded-lg"
+          class="button border p-2 bg-theme-primary rounded-xl text-white"
         >
           مشاهده سبد
         </a>
