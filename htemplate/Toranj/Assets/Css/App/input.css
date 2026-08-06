@@ -141,7 +141,7 @@ html {
   --theme-primary-900: #112b50;
   --theme-secondary: #fab130;
   --theme-secondary-400: #c7924c;
-  --theme-linear-md: 0deg, #0ee15c 0%, #0eae49 100%;
+  
 }
 
 @utility container {

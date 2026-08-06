@@ -1,7 +1,6 @@
 import '../Harmony-Menu/Harmony-menu.js';
 
 $(document).ready(function () {
-
   var Accordion = function (el, multiple) {
     this.el = el;
     this.multiple = multiple || false;
@@ -105,7 +104,8 @@ $(document).ready(function () {
 
   // /*tab_end*/
 
-  /*reedmore*/
+
+  /* reedmore */
   $('.introduction-wrapper').each(function () {
     const wrapper = $(this);
     const myDiv = wrapper.find('.introduction');
@@ -115,46 +115,57 @@ $(document).ready(function () {
 
     const defaultHeight = myDiv.attr('data-height');
 
-    // ست کردن ارتفاع اولیه
+    // ارتفاع اولیه
     myDiv.css({
       height: defaultHeight,
       overflow: 'hidden',
       boxSizing: 'border-box',
     });
 
+    // باز کردن متن
     button.on('click', function () {
-      // ابتدا ارتفاع به auto تنظیم می‌شود تا مقدار واقعی را بگیریم
+      // محاسبه ارتفاع واقعی
       myDiv.css('height', 'auto');
-
-      // گرفتن ارتفاع واقعی در حالت auto
       const fullHeight = myDiv.outerHeight();
 
-      // بازگرداندن به ارتفاع اولیه برای شروع انیمیشن
+      // بازگشت به ارتفاع اولیه
       myDiv.css('height', defaultHeight);
 
-      // اجرای انیمیشن تا ارتفاع واقعی
-      myDiv.stop().animate({ height: fullHeight }, 400, function () {
-        // بعد از انیمیشن، ارتفاع را به auto برمی‌گردانیم تا در صورت تغییر محتوای داخلی، خودش تنظیم شود
-        myDiv.css('height', 'auto');
-      });
+      // انیمیشن باز شدن
+      myDiv.stop().animate(
+        {
+          height: fullHeight,
+        },
+        400,
+        function () {
+          myDiv.css('height', 'auto');
+        }
+      );
 
       button.addClass('add-class-introduction-span');
       viewLessBtn.addClass('add-class-view-less');
       svgIcon.addClass('add-class-introduction-shop-svg');
     });
 
+    // بستن متن
     viewLessBtn.on('click', function () {
-      // بستن انیمیشنی به ارتفاع اولیه
-      const currentHeight = myDiv.outerHeight();
-      myDiv.css('height', currentHeight); // تنظیم ارتفاع فعلی برای شروع انیمیشن
-      myDiv.stop().animate({ height: defaultHeight }, 400);
+      // ارتفاع فعلی برای شروع انیمیشن
+      myDiv.css('height', myDiv.outerHeight());
+
+      // انیمیشن بسته شدن
+      myDiv.stop().animate(
+        {
+          height: defaultHeight,
+        },
+        400
+      );
 
       button.removeClass('add-class-introduction-span');
       viewLessBtn.removeClass('add-class-view-less');
       svgIcon.removeClass('add-class-introduction-shop-svg');
     });
   });
-
+  
   /*reedmore*/
 
   $('.h_animation .use_animation').css('opacity', 0);
@@ -192,101 +203,97 @@ $(document).ready(function () {
     });
   });
 
-    function initializeCountdowns() {
-      if (!$('.et-timer').length) return;
-      $('.et-timer').each(function () {
-        const $timer = $(this);
-        const enddate = $timer.data('enddate');
-        const endDate = new Date(
-          new Date().getTime() + enddate * 24 * 60 * 60 * 1000
-        );
+  function initializeCountdowns() {
+    if (!$('.et-timer').length) return;
+    $('.et-timer').each(function () {
+      const $timer = $(this);
+      const enddate = $timer.data('enddate');
+      const endDate = new Date(
+        new Date().getTime() + enddate * 24 * 60 * 60 * 1000
+      );
 
-        function updateTimer() {
-          const now = new Date().getTime();
-          const distance = endDate - now;
+      function updateTimer() {
+        const now = new Date().getTime();
+        const distance = endDate - now;
 
-          if (distance < 0) {
-            clearInterval(interval);
-            $timer.find('.days').text('00');
-            $timer.find('.hours').text('00');
-            $timer.find('.minutes').text('00');
-            $timer.find('.seconds').text('00');
-            return;
-          }
-
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          );
-          const minutes = Math.floor(
-            (distance % (1000 * 60 * 60)) / (1000 * 60)
-          );
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          $timer.find('.days').text(days.toString().padStart(2, '0'));
-          $timer.find('.hours').text(hours.toString().padStart(2, '0'));
-          $timer.find('.minutes').text(minutes.toString().padStart(2, '0'));
-          $timer.find('.seconds').text(seconds.toString().padStart(2, '0'));
+        if (distance < 0) {
+          clearInterval(interval);
+          $timer.find('.days').text('00');
+          $timer.find('.hours').text('00');
+          $timer.find('.minutes').text('00');
+          $timer.find('.seconds').text('00');
+          return;
         }
 
-        updateTimer();
-        const interval = setInterval(updateTimer, 1000);
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        $timer.find('.days').text(days.toString().padStart(2, '0'));
+        $timer.find('.hours').text(hours.toString().padStart(2, '0'));
+        $timer.find('.minutes').text(minutes.toString().padStart(2, '0'));
+        $timer.find('.seconds').text(seconds.toString().padStart(2, '0'));
+      }
+
+      updateTimer();
+      const interval = setInterval(updateTimer, 1000);
+    });
+  }
+
+  $(document).ready(initializeCountdowns);
+
+  $(function () {
+    if (!$('.stats-counter').length) return;
+    function startCounter($container) {
+      $container.find('.counter').each(function () {
+        let $this = $(this);
+
+        if ($this.hasClass('done')) return;
+
+        $this.addClass('done');
+
+        let target = parseInt($this.data('range'));
+        let $number = $this.find('.progress-number');
+
+        $({ Counter: 0 }).animate(
+          { Counter: target },
+          {
+            duration: 3000,
+            easing: 'swing',
+
+            step: function () {
+              $number.text('+' + Math.ceil(this.Counter));
+            },
+
+            complete: function () {
+              $number.text('+' + target);
+            },
+          }
+        );
       });
     }
 
-    $(document).ready(initializeCountdowns);
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            startCounter($(entry.target));
 
+            // فقط همین سکشن از لیست observer حذف شود
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+      }
+    );
 
-     $(function () {
-      if (!$('.stats-counter').length) return;
-       function startCounter($container) {
-         $container.find('.counter').each(function () {
-           let $this = $(this);
-
-           if ($this.hasClass('done')) return;
-
-           $this.addClass('done');
-
-           let target = parseInt($this.data('range'));
-           let $number = $this.find('.progress-number');
-
-           $({ Counter: 0 }).animate(
-             { Counter: target },
-             {
-               duration: 3000,
-               easing: 'swing',
-
-               step: function () {
-                 $number.text('+' + Math.ceil(this.Counter));
-               },
-
-               complete: function () {
-                 $number.text('+' + target);
-               },
-             }
-           );
-         });
-       }
-
-       const observer = new IntersectionObserver(
-         function (entries) {
-           entries.forEach(function (entry) {
-             if (entry.isIntersecting) {
-               startCounter($(entry.target));
-
-               // فقط همین سکشن از لیست observer حذف شود
-               observer.unobserve(entry.target);
-             }
-           });
-         },
-         {
-           threshold: 0.3,
-         }
-       );
-
-       $('.stats-counter').each(function () {
-         observer.observe(this);
-       });
-     });
-
+    $('.stats-counter').each(function () {
+      observer.observe(this);
+    });
+  });
 });

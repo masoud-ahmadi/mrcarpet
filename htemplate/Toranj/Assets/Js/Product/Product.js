@@ -16,8 +16,7 @@ $(document).ready(function () {
     },
   });
 
-  const commentPrev = document.querySelector('.btn-prev.comment');
-  const commentNext = document.querySelector('.btn-next.comment');
+
   const slidercomment = new Swiper('.comment_slider', {
     autoplay: {
       delay: 6000,
@@ -36,43 +35,20 @@ $(document).ready(function () {
     slidesPerView: 'auto',
     spaceBetween: 10,
 
-    navigation: {
-      nextEl: commentNext,
-      prevEl: commentPrev,
-    },
-    on: {
-      init() {
-        updateCommentNav(this);
-
-        if (window.innerWidth < 425) {
-          this.autoplay.stop();
-        }
-      },
-
-      slideChange() {
-        updateCommentNav(this);
-      },
-
-      resize() {
-        if (window.innerWidth < 425) {
-          this.autoplay.stop();
-        } else {
-          this.autoplay.start();
-        }
-      },
-    },
+    
   });
 
-  function updateCommentNav(swiper) {
-    if (swiper.isBeginning) commentPrev.classList.add('disabled');
-    else commentPrev.classList.remove('disabled');
+     $('.btn-prev-comment').on('click', function (e) {
+     e.preventDefault();
+     slidercomment.slideNext();
+   });
 
-    if (swiper.isEnd) commentNext.classList.add('disabled');
-    else commentNext.classList.remove('disabled');
-  }
+   $('.btn-next-comment').on('click', function (e) {
+     e.preventDefault();
+     slidercomment.slidePrev();
+   });
 
-  const videoPrev = document.querySelector('.btn-prev.video');
-  const videoNext = document.querySelector('.btn-next.video');
+
   const slidervideo = new Swiper('.video_slider', {
     autoplay: {
       delay: 6000,
@@ -87,44 +63,59 @@ $(document).ready(function () {
     },
     freeMode: true,
     loop: false,
-
     slidesPerView: 'auto',
-    spaceBetween: 10,
-
-    navigation: {
-      nextEl: videoNext,
-      prevEl: videoPrev,
-    },
-    on: {
-      init() {
-        updateVideoNav(this);
-
-        if (window.innerWidth < 425) {
-          this.autoplay.stop();
-        }
-      },
-
-      slideChange() {
-        updateVideoNav(this);
-      },
-
-      resize() {
-        if (window.innerWidth < 425) {
-          this.autoplay.stop();
-        } else {
-          this.autoplay.start();
-        }
-      },
-    },
+    spaceBetween: 20,
+    rtl: true,
   });
 
-  function updateVideoNav(swiper) {
-    if (swiper.isBeginning) videoPrev.classList.add('disabled');
-    else videoPrev.classList.remove('disabled');
+   $('.btn-prev-video').on('click', function (e) {
+     e.preventDefault();
+     slidervideo.slideNext();
+   });
 
-    if (swiper.isEnd) videoNext.classList.add('disabled');
-    else videoNext.classList.remove('disabled');
-  }
+   $('.btn-next-video').on('click', function (e) {
+     e.preventDefault();
+     slidervideo.slidePrev();
+   });
+
+
+   const sliderrelated = new Swiper('.related_slider', {
+     lazy: {
+       loadPrevNext: true,
+       loadPrevNextAmount: 1,
+     },
+
+     slidesOffsetBefore: 10,
+     slidesOffsetAfter: 10,
+
+     freeMode: true,
+     loop: false,
+     rtl: true,
+     slidesPerView: 'auto',
+     spaceBetween: 20,
+
+     autoplay: {
+       delay: 5000,
+       disableOnInteraction: false,
+       pauseOnMouseEnter: true,
+     },
+
+     breakpoints: {
+       768: {
+         speed: 1000,
+       },
+     },
+   });
+
+    $('.btn-prev-related').on('click', function (e) {
+      e.preventDefault();
+      sliderrelated.slideNext();
+    });
+
+    $('.btn-next-related').on('click', function (e) {
+      e.preventDefault();
+      sliderrelated.slidePrev();
+    });
 
 
   Fancybox.bind("[data-fancybox='gallery_b']", {
