@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="htemplate/Toranj/Assets/Css/App/output.css" />
+  </head>
+  <body>
+    <!-- start-header -->
+    <header
+      class="aparat-header fixed top-0 inset-x-0 ps-4 pe-4 bg-white h-16 flex items-center justify-between z-1000 border-b border-slate-100"
+    >
+      <div class="shrink-0 flex items-center gap-2">
+        <button
+          type="button"
+          aria-label="باز کردن منو ناوبری"
+          class="size-10 grid place-content-center rounded-lg bg-slate-100 text-lg show-btn cursor-pointer lg:hidden"
+          data-modal="menu"
+        >
+          <i class="harmony-icon-menu harmony-icon"></i>
+        </button>
+        <a href="(url)" class="max-w-50 block shrink-0 p-2">
+          <img
+            src="htemplate/Toranj/Assets/Images/Logo/logo.png"
+            loading="lazy"
+            alt=""
+            title=""
+            class="max-w-1/2 object-cover mx-auto"
+            width="200"
+            height="50"
+          />
+        </a>
+      </div>
+
+      <div class="flex-1 lg:flex items-center justify-center hidden">
+        <div class="relative max-w-lg w-full">
+          <button
+            type="button"
+            aria-label="جستجو محصول"
+            class="text-slate-600 cursor-pointer absolute top-1/2 inset-e-3 -translate-y-1/2 hsearchbtn2"
+          >
+            <i class="harmony-icon-search harmony-icon text-xl"></i>
+          </button>
+          <input
+            type="search"
+            class="bg-slate-100 w-full text-slate-600 rounded-xl text-sm outline-none focus:outline-none hsearchtext2 p-3 pe-9"
+            placeholder="جستجوی ویدیو...."
+          />
+        </div>
+      </div>
+
+      <div class="shrink-0">
+        <button
+          type="button"
+          aria-label="باز کردن سرچ"
+          class="show-btn inline-flex items-center gap-3 justify-between border border-slate-200 p-3 rounded-xl hover:border-slate-300 hover:bg-slate-100 active:scale-95 duration-200 cursor-pointer lg:hidden"
+          data-modal="search"
+        >
+          <i class="harmony-icon-search harmony-icon"></i>
+        </button>
+
+        <a
+          href="signin"
+          class="inline-flex items-center gap-3 justify-between border border-slate-200 p-3 rounded-xl hover:border-slate-300 hover:bg-slate-100 active:scale-95 duration-200"
+        >
+          <i class="harmony-icon-user harmony-icon"></i>
+          <span class="text-xs lg:inline-flex hidden">ورود و عضویت</span>
+        </a>
+      </div>
+    </header>
+    <!-- end-header -->
+
+    <!-- start-side -->
+    <aside
+      class="hmodal sidebar-panel max-w-70 w-full fixed lg:w-50 inset-s-0 top-0 lg:top-16 bg-white bottom-0 h-full z-1001 overflow-hidden border-e border-slate-100 translate-x-full lg:translate-0 [&.showModal]:translate-0"
+      data-modal="menu"
+    >
+      <div class="flex h-full flex-col overflow-y-auto hide-scrollbar">
+        <div class="flex-1 pt-4 px-2 space-y-3">
+          <div
+            class="flex justify-between items-center sticky top-0 bg-white z-30 gap-3 lg:hidden"
+          >
+            <a href="signin" class="flex items-center gap-2 flex-1">
+              <div
+                class="rounded-full size-10 overflow-hidden grid place-content-center shrink-0"
+              >
+                <img
+                  src="htemplate/Toranj/Assets/Images/User/user.png"
+                  alt="user"
+                  class="size-full object-cover"
+                  title="user"
+                />
+              </div>
+              <div class="flex-1">
+                <p class="line-clamp-1 text-sm">(hpname)</p>
+              </div>
+            </a>
+            <button
+              type="button"
+              aria-label="بستن"
+              class="btnClose inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white p-2 text-xs cursor-pointer"
+            >
+              <i class="harmony-icon-cancel-circled-1 harmony-icon text-sm"></i>
+              بستن
+            </button>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="group flex items-center gap-2 text-slate-600 rounded-lg p-2 hover:bg-slate-100 relative overflow-hidden"
+            >
+              <i
+                class="harmony-icon-home harmony-icon text-xl duration-200"
+              ></i>
+              <span class="text-sm line-clamp-1">صفحه اصلی</span>
+            </a>
+            <a
+              href="#"
+              class="group flex items-center gap-2 text-slate-600 rounded-lg p-2 hover:bg-slate-100 relative overflow-hidden"
+            >
+              <i class="harmony-icon-bag harmony-icon text-xl duration-200"></i>
+
+              <span class="text-sm line-clamp-1">فروشگاه</span>
+            </a>
+          </div>
+          <div class="space-y-3 h-full">
+            <div class="flex items-center gap-1">
+              <span class="text-xs text-slate-400">برای شما</span>
+              <span class="flex-1 bg-slate-200 h-px"></span>
+            </div>
+            (menu masterclass="default_accordion harmony-mobile-menu-accordion"
+            liclass="mobile-menu-li" ulclass="mobile-menu-li" group="99"
+            aclass="mobile-menu-a")(/menu)
+            <ul class="default_accordion harmony-mobile-menu-accordion">
+              <li>
+                <a href="https://demo2.arianteam.com/services">خدمات ما </a>
+                <ul>
+                  <li>
+                    <a href="https://demo2.arianteam.com/consulting-services"
+                      >خدمات مشاوره</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://demo2.arianteam.com/support-services"
+                      >خدمات پشتیبانی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="aparat.html">پروژه‌ها </a>
+                <ul>
+                  <li>
+                    <a href="aparat.html">پروژه‌های در حال اجرا</a>
+                  </li>
+                  <li>
+                    <a href="https://demo2.arianteam.com/completed-projects"
+                      >پروژه‌های تکمیل‌شده</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://demo2.arianteam.com/training">آموزش‌ها</a>
+                <ul>
+                  <li>
+                    <a href="https://demo2.arianteam.com/advanced-training"
+                      >آموزش‌های پیشرفته</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="accordion-menu space-y-2">
+              <li class="[&.open_.dropdownlink]:bg-slate-100">
+                <div
+                  class="dropdownlink text-slate-700 flex items-center justify-between px-2 cursor-pointer hover:bg-slate-100 p-2 rounded-lg"
+                >
+                  <h2 class="text-sm">فرش 12000 شانه</h2>
+                  <i class="harmony-icon-down-open-1 harmony-icon"></i>
+                </div>
+                <div class="submenuItems p-2 space-y-1">
+                  <a
+                    href="aparat.html"
+                    class="group flex items-center gap-2 rounded-lg px-3 py-2 transition hover:bg-sky-100 [&.group-active]:bg-sky-100"
+                  >
+                    <span
+                      class="h-2 w-2 rounded-full bg-slate-300 transition group-hover:bg-blue-600 group-[.group-active]:bg-blue-700"
+                    ></span>
+
+                    <span
+                      class="line-clamp-1 text-xs text-slate-700 group-hover:text-blue-700 group-[.group-active]:text-blue-700"
+                    >
+                      معایب فرش 1200 شانه
+                    </span>
+                  </a>
+                  <a
+                    href="#"
+                    class="group flex items-center gap-2 rounded-lg px-3 py-2 transition hover:bg-sky-100 [&.group-active]:bg-sky-100"
+                  >
+                    <span
+                      class="h-2 w-2 rounded-full bg-slate-300 transition group-hover:bg-blue-600 group-[.group-active]:bg-blue-700"
+                    ></span>
+
+                    <span
+                      class="line-clamp-1 text-xs text-slate-700 group-hover:text-blue-700 group-[.group-active]:text-blue-700"
+                    >
+                      معایب فرش 1200 شانه
+                    </span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grow"></div>
+      </div>
+    </aside>
+    <!-- end-side -->
+
+    <div class="min-h-[calc(100dvh-4rem)] aparat-app bg-slate-50 px-4">
+      <!-- start-sidebar -->
+
+      <!-- main -->
+
+      <main
+        class="main-content grid grid-cols-1 lg:px-7 place-content-start overflow-hidden mt-16 lg:ms-48"
+      >
+        <!-- 2 -->
+        <section class="border-t-2 border-slate-100 py-7 space-y-5">
+          <div
+            class="grid grid-cols-1 h_animation sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-7"
+          >
+            <article class="space-y-2 use_animation">
+              <a
+                href="#"
+                class="pb-[57%] relative block overflow-hidden rounded-2xl bg-zinc-900 group"
+              >
+                <img
+                  src="htemplate/Toranj/Assets/Images/data/1.jpg"
+                  class="absolute inset-0 size-full object-cover duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  alt=""
+                />
+
+                <video
+                  class="preview absolute inset-0 size-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  data-clips="5-8,18-22,40-45"
+                  src="https://static.cdn.asset.aparat.com/avt/71229748_15s.mp4"
+                ></video>
+
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black/80 via-black/10 to-transparent"
+                ></div>
+
+                <span
+                  class="absolute bottom-3 inset-e-2 z-20 rounded bg-black px-2 py-1 text-xs text-white"
+                >
+                  12:45
+                </span>
+              </a>
+
+              <div class="space-y-2">
+                <h3 class="line-clamp-2 text-xs font-semibold leading-relaxed">
+                  آموزش کامل طراحی رابط کاربری با HTML و Tailwind CSS آموزش کامل
+                  طراحی رابط کاربری با HTML و Tailwind CSS
+                </h3>
+
+                <div class="flex items-center text-xs text-slate-400 gap-3">
+                  <div class="flex items-center gap-1">
+                    <i class="harmony-icon-eye-1 harmony-icon"></i>
+                    <span>۱۸.۴ بازدید</span>
+                  </div>
+
+                  <span class="size-1 rounded-full bg-slate-300"></span>
+
+                  <div class="flex items-center gap-1">
+                    <i class="harmony-icon-thumbs-up harmony-icon"></i>
+                    <span>۹۷٪</span>
+                  </div>
+
+                  <span class="size-1 rounded-full bg-slate-300"></span>
+
+                  <span>۲۱ فروردین ۱۴۰۵</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="flex justify-center page-number">(pager)</div>
+        </section>
+        <!-- 2 -->
+      </main>
+      <!-- end-header -->
+    </div>
+
+    <div
+      class="hmodal fixed right-1/2 translate-x-1/2 w-full max-w-md px-5"
+      id="searching"
+      data-modal="search"
+    >
+      <div class="w-full">
+        <div class="relative">
+          <input
+            type="search"
+            class="w-full text-xs peer bg-theme-gray-800 focus:border-theme-primary h-12 pe-12 border focus:outline-0 input hsearchtext3 rounded-full text-gray-300 ps-3"
+            placeholder="جستجو کنید"
+          />
+          <button
+            type="button"
+            aria-label=" سرچ"
+            class="bg-theme-primary size-10 absolute inset-e-1 top-1/2 -translate-y-1/2 button rounded-full text-black hsearchbtn3"
+          >
+            <i class="harmony-icon-search harmony-icon text-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- start-js -->
+    <script src="htemplate/Toranj/Assets/Component/Jquery/jquery-4.0.0.min.js"></script>
+    <script
+      type="module"
+      src="htemplate/Toranj/Assets/Component/AllTemplate/allModal.js"
+    ></script>
+    <script src="htemplate/Toranj/Assets/Js/aparat/aparat.js"></script>
+  </body>
+</html>
