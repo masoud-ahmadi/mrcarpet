@@ -33,9 +33,8 @@ $(document).ready(function () {
     loop: false,
 
     slidesPerView: 'auto',
-    spaceBetween: 10,
+    spaceBetween: 20,
 
-    
   });
 
      $('.btn-prev-comment').on('click', function (e) {
